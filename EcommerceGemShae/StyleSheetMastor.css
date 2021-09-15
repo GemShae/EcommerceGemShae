@@ -1,0 +1,29 @@
+﻿#topHeader {
+    background-color: #e1b12c;
+    border-bottom: 1px solid #273c75;
+}
+ #topHeader a {
+     color: #ecf0f1;
+     font-weight: 600;
+     font-size: 0.9rem;
+}
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+ul li a{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+/* START FOOTER */
+.footer {
+    
+}
+.top-footer p{
+    color: white;
+}
+.top-footer a {
+    color: white;
+    font-weight: 600;
+}
+/* END FOOTER */
