@@ -13,5 +13,10 @@ namespace EcommerceGemShae
         {
 
         }
+
+        protected void HomeToProducts_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Products.aspx");
+        }
     }
 }

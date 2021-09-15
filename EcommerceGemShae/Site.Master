@@ -20,7 +20,7 @@
     <%--FontAwesome Css--%>
     <link href="fontawesome/css/all.css" rel="stylesheet" />
     <%--My Created Css--%>
-    <link href="StyleSheetMastor.css" type="text/css" rel="stylesheet" />
+    <link href="StyleSheetMaster.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -96,8 +96,8 @@
                         <img class="img-fluid" src="images/GEM logo (wide).png" width="210" alt="GemShae" />
                         <p>
                             As a business located on the island called Jamaica, we aim to spread the message to everyone to 
-                            <b> BE A GEM!</b>. We specialize in...
-                            <a href="About.aspx"> Read more... </a> 
+                            <b> BE A GEM!</b>.
+                            <a href="About.aspx"> Learn more &raquo; </a> 
                         </p>
                         <a href="https://www.facebook.com/Gem-Shae-Enterprsie-310294992926560/" style="color: silver;" class="p-1"> <i class="fab fa-2x fa-facebook-square"></i> </a>
                         <a href="https://twitter.com/Gem_Shae" style="color: silver;" class="p-1"> <i class="fab fa-2x fa-twitter-square"></i> </a>
@@ -132,8 +132,8 @@
                 </div>
             </div>
 
-            <div class="container-fluid bottom-footer pt-2">
-                <div class="row">
+            <div class="container-fluid bottom-footer pt-4">
+                <div class="row align-items-center">
                     <div class="col-12 text-center">
                         <p> Copyrights &copy; <%: DateTime.Now.Year %> - All rights reserved </p>
                     </div>
