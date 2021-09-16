@@ -114,8 +114,8 @@
                         <h3> Products Category </h3>
                         <a href="#"> Photography </a> <br />
                         <a href="#"> Audio </a> <br />
-                        <a href="#"> Entertainment </a>
-                        <a href="#"> Videography </a>
+                        <a href="#"> Entertainment </a> <br />
+                        <a href="#"> Videography </a> <br />
                         <a href="#"> Motivational Speaking </a>
                     </div>
                     <div class="col-md-3 pl-4 pr-4">
