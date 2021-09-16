@@ -19,13 +19,14 @@
                 </div>
                 
                 <div class="col-md-7">
-                    <img alt="Drone in Air" src="images/DroneInAir.JPG" height="300"/>
+                    <img class="img-fluid" alt="Drone in Air" src="images/DroneInAir.JPG" height="300"/>
                 </div>
             </div>
         </div>
     </section>
     <%--END HOME PAGE FIRST SECTION--%>
     
+    <%--START HOME PAGE SECOND SECTION - OUR QUALITIES--%>
     <section class="pt-3 pb-4">
         <div class="container">
             <div class="row">
@@ -54,5 +55,44 @@
             </div>
         </div>
     </section>
+    <%--END HOME PAGE SECOND SECTION - OUR QUALITIES--%>
+    
+    <%--START HOME PAGE 3rd SECTION - OUR WORK--%>
+    <section class="our-work-section pt-2 pb-2">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <asp:Image ID="UpendoImage" runat="server" class="img-fluid p-5 qualities-img our-work-img" AlternateText="Upendo" ImageUrl="~/images/Upendo.JPG" Width="200" />
+                </div>
+                <div class="col-md-4">
+                    <asp:Image ID="FruitImage2" runat="server" class="img-fluid p-5 qualities-img our-work-img" AlternateText="Fruit" ImageUrl="~/images/Fruit.jpg" />
+                </div>
+                <div class="col-md-4">
+                    <asp:Image ID="MBCCImage" runat="server" class="img-fluid p-5 qualities-img our-work-img" AlternateText="MBCC Choir" ImageUrl="~/images/MBCC.JPG" Width="200" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <%--END HOME PAGE 3rd SECTION - OUR WORK--%>
+
+    <%--START HOME PAGE 4th SECTION - ABOUT GEM-SHAE E--%>
+    <section class="p-2 pt-md-4 pb-md-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>About Gem-Shae Enterprise</h2>
+                    <h6>Established in 2017, Gem-Shae Enterprise has developed and evolved to provide our clients with the best service in 
+                        the world. So, whether you’re hosting a private party, corporate function, or wedding, let us help you make it one 
+                        to remember. 
+                    </h6>
+                    <asp:Button ID="HomeToAbout" runat="server" Text="Read More" BorderStyle="Groove" ForeColor="#0000CC" OnClick="HomeToAbout_Click" />
+                </div>
+                <div class="col-md-6">
+                    <asp:Image ID="DroneonStand" runat="server" ImageUrl="~/images/DroneOnStand.JPG" Width="400px" Class="img-fluid p-3" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <%--END HOME PAGE 4th SECTION - ABOUT GEM-SHAE E--%>
 
 </asp:Content>

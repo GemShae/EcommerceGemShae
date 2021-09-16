@@ -1835,6 +1835,9 @@
     <Content Include="images\DroneInAir.JPG" />
     <Content Include="images\DroneOnStand.JPG" />
     <Content Include="images\high-quality.png" />
+    <Content Include="images\Fruit.jpg" />
+    <Content Include="images\MBCC.JPG" />
+    <Content Include="images\Upendo.JPG" />
     <Content Include="Products.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

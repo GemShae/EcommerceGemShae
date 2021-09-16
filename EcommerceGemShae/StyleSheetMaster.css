@@ -38,7 +38,7 @@ ul li a{
 }
 /* END FOOTER */
 
-/* START HOME PAGE FIRST SECTION */
+/* START HOME PAGE */
 .top-section {
     background-color: #4bcffa;
     color:white;
@@ -46,4 +46,10 @@ ul li a{
 .qualities-img{
     width: 150px;
 }
-/* END HOME PAGE FIRST SECTION */
+.our-work-img {
+    border-radius: 50%;
+}
+.our-work-section{
+    background-color: #004d80;
+}
+/* END HOME PAGE */
