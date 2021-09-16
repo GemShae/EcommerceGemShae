@@ -24,33 +24,6 @@ namespace EcommerceGemShae
         protected global::System.Web.UI.WebControls.Button HomeToProducts;
 
         /// <summary>
-        /// UpendoImage control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image UpendoImage;
-
-        /// <summary>
-        /// FruitImage2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image FruitImage2;
-
-        /// <summary>
-        /// MBCCImage control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image MBCCImage;
-
-        /// <summary>
         /// HomeToAbout control.
         /// </summary>
         /// <remarks>

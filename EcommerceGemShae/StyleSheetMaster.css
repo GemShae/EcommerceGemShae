@@ -1,20 +1,23 @@
-﻿#topHeader {
+﻿/* START NAVBAR */
+#topHeader {
     background-color: #e1b12c;
-    border-bottom: 1px solid #273c75;
+    border-bottom: 1.5px solid #273c75;
 }
  #topHeader a {
-     color: #ecf0f1;
+     color: white;;
      font-weight: 600;
-     font-size: 0.9rem;
+     font-size: 20px;
 }
 .container-fluid{
     padding-left: 0;
     padding-right: 0;
 }
 ul li a{
-    font-size: 1.5rem;
+    font-size: 30px;
     font-weight: 600;
+    color: navy;
 }
+/* END NAVBAR */
 
 /* START FOOTER */
 .full-footer {
@@ -51,5 +54,21 @@ ul li a{
 }
 .our-work-section{
     background-color: #004d80;
+}
+.home-subscribe {
+    background-color: #004d80;
+    color: white;
+}
+.home-subscribe .form-control{
+    height: 40px;
+    border-color: transparent;
+    border-radius: 20px 0 0 20px;
+}
+}
+.home-subscribe .btn {
+    min-height: 40px;
+    border-radius: 0 20px 20px 0;
+    background: #FC427B;
+    color: #fff;
 }
 /* END HOME PAGE */
