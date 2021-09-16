@@ -46,7 +46,7 @@
 
         <%--START HEADER--%>
         <div class="navbar navbar-fixed-top">
-            <div class="p-1" id="topHeader">
+            <div id="top-header">
                 <div class="container">
                     <div class="row">
                         <%--On any device always take 12 spaces--%>
@@ -58,25 +58,23 @@
                 </div>
             </div>
 
-            <div id="bottomHeader">
+            <div id="bottom-header">
                 <div class="navbar navbar-expand-md">
-                    <div class="container" style="background-color: #eb4d4b;">
+                    <div class="container">
                         <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-toggler">
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>                      
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" >
+                                <span class="navbar-toggler-icon"> <i class="fas fa-3x fa-bars"></i> </span>
                             </button>
                             <a class="navbar-brand" runat="server" href="~/">
-                                <img src="images/GEM logo (wide).png" width="135" alt="GemShae" />
+                                <img src="images/GEM logo (wide).png" width="135" alt="GemShae"/>
                             </a>
                         </div>
-                        <div class="collapse navbar-collapse" id="navbar-toggler">
+                        <div class="navbar-collapse collapse">
                             <ul class="nav navbar-nav">
-                                <li class="nav-item"> <a runat="server" class="nav-link" href="~/"> Home </a> </li>
-                                <li class="nav-item"> <a runat="server" class="nav-link" href="~/Products"> Products </a> </li>
-                                <li class="nav-item"> <a runat="server" class="nav-link" href="~/About"> About Us </a> </li>
-                                <li class="nav-item"> <a runat="server" class="nav-link" href="~/Contact"> Contact Us </a> </li>
+                                <li > <a runat="server" href="~/"> Home </a> </li>
+                                <li > <a runat="server" href="~/Products"> Products </a> </li>
+                                <li > <a runat="server" href="~/About"> About Us </a> </li>
+                                <li > <a runat="server" href="~/Contact"> Contact Us </a> </li>
                             </ul>
                         </div>
                     </div> 
