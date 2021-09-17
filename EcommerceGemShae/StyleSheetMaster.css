@@ -47,6 +47,7 @@ ul li a {
 }
 .qualities-img {
     width: 150px;
+    height: 143px;
 }
 .rounded-hr {
     border-top: 8px solid #bbb;
@@ -71,3 +72,12 @@ ul li a {
     color: #fff;
 }
 /* END HOME PAGE */
+
+/* START ABOUT PAGE */
+.breadcrumbs-section {
+    background-color: #F8EFBA;
+}
+.breadcrumb {
+    background-color: transparent;
+}
+/* END ABOUT PAGE */

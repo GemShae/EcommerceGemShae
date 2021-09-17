@@ -115,7 +115,6 @@
     <Content Include="datatables\css\jquery.dataTables.min.css" />
     <Content Include="datatables\js\jquery.dataTables.min.js" />
     <Content Include="Default.aspx" />
-    <Content Include="favicon.ico" />
     <Content Include="fontawesome\attribution.js" />
     <Content Include="fontawesome\css\all.css" />
     <Content Include="fontawesome\css\all.min.css" />
@@ -1838,6 +1837,9 @@
     <Content Include="images\DroneOnStand.JPG" />
     <Content Include="images\high-quality.png" />
     <Content Include="images\Fruit.jpg" />
+    <Content Include="images\Igal.JPG" />
+    <Content Include="images\Jaida.JPG" />
+    <Content Include="images\Shanya.JPG" />
     <Content Include="images\MBCC.JPG" />
     <Content Include="images\press-conference.png" />
     <Content Include="images\Upendo.JPG" />
