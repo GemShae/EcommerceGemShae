@@ -63,7 +63,7 @@
                     <div class="container">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" >
-                                <span class="navbar-toggler-icon"> <i class="fas fa-3x fa-bars"></i> </span>
+                                <span class="navbar-toggler-icon"> <i class="fas fa-bars"></i> </span>
                             </button>
                             <a class="navbar-brand" runat="server" href="~/">
                                 <img src="images/GEM logo (wide).png" width="135" alt="GemShae"/>
@@ -101,10 +101,10 @@
                             <b> BE A GEM!</b>.
                             <a href="About.aspx"> Learn more &raquo; </a> 
                         </p>
-                        <a href="https://www.facebook.com/Gem-Shae-Enterprsie-310294992926560/" style="color: silver;" class="p-1"> <i class="fab fa-2x fa-facebook-square"></i> </a>
-                        <a href="https://twitter.com/Gem_Shae" style="color: silver;" class="p-1"> <i class="fab fa-2x fa-twitter-square"></i> </a>
-                        <a href="https://www.instagram.com/gemshaeofficial/" style="color: silver;" class="p-1"> <i class="fab fa-2x fa-instagram-square"></i> </a>
-                        <a href="https://www.pinterest.com/gemshaeofficial/_saved/" style="color: silver;" class="p-1"> <i class="fab fa-2x fa-pinterest-square"></i> </a>
+                        <a href="https://www.facebook.com/Gem-Shae-Enterprsie-310294992926560/" style="color: #192a56;" class="p-1"> <i class="fab fa-2x fa-facebook-square"></i> </a>
+                        <a href="https://twitter.com/Gem_Shae" style="color: #192a56;" class="p-1"> <i class="fab fa-2x fa-twitter-square"></i> </a>
+                        <a href="https://www.instagram.com/gemshaeofficial/" style="color: #192a56;" class="p-1"> <i class="fab fa-2x fa-instagram-square"></i> </a>
+                        <a href="https://www.pinterest.com/gemshaeofficial/_saved/" style="color: #192a56;" class="p-1"> <i class="fab fa-2x fa-pinterest-square"></i> </a>
                     </div>
                     <div class="col-md-3 pl-4 pr-4">
                         <h3> Important Links </h3>
@@ -135,7 +135,7 @@
             </div>
 
             <div class="container-fluid bottom-footer pt-4">
-                <div class="row align-items-center">
+                <div class="row">
                     <div class="col-12 text-center">
                         <p> Copyrights &copy; <%: DateTime.Now.Year %> - All rights reserved </p>
                     </div>

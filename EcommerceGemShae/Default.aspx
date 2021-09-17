@@ -5,10 +5,10 @@
     <%--START HOME PAGE FIRST SECTION--%>
     <section class="top-section pt-4 pb-5">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-5 text-center pt-5">
-                    <br />
-                    <h4> Changing Lives One Gem At A Time</h4>
+            <div class="row">
+                <div class="col-md-6 text-center pt-8">
+                    <br /> <br /> 
+                    <h4> "Changing Lives One Gem At A Time"</h4>
                     <h1>Best in Media Products</h1>
                     <h5>We specialize in Photography, Videography, Audio including Dj'ing and Mixing of tracks, Motivational Speaking and 
                         Entertainment including Singers and a Dance Unit.</h5>
@@ -18,8 +18,9 @@
 
                 </div>
                 
-                <div class="col-md-7">
-                    <img class="img-fluid p-5" alt="Drone in Air" src="images/DroneInAir.JPG" height="300"/>
+                <div class="col-md-6">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img class="rounded img-fluid mx-auto d-block" alt="Drone in Air" src="images/DroneInAir.JPG" height="280"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 </div>
             </div>
         </div>
@@ -56,56 +57,44 @@
         </div>
     </section>
     <%--END HOME PAGE SECOND SECTION - OUR QUALITIES--%>
-    
-    <%--START HOME PAGE 3rd SECTION - OUR WORK--%>
-    <%-- <section class="our-work-section pt-3 pb-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 align-items-center p-4">
-                    <asp:Image ID="UpendoImage" runat="server" class="img-fluid p-5 qualities-img our-work-img" AlternateText="Upendo" ImageUrl="~/images/Upendo.JPG" Width="200" />
-                </div>
-                <div class="col-md-4 align-items-center p-4">
-                    <asp:Image ID="FruitImage" runat="server" class="img-fluid qualities-img p-5 our-work-img" AlternateText="Fruit" ImageUrl="~/images/Fruit.jpg" Width="190" />
-                </div>
-                <div class="col-md-4 align-items-center p-4">
-                    <asp:Image ID="MBCCImage" runat="server" class="img-fluid p-5 qualities-img our-work-img" AlternateText="MBCC Choir" ImageUrl="~/images/MBCC.JPG" Width="200" />
-                </div>
-            </div>
-        </div>
-    </section> --%>
-    <%--END HOME PAGE 3rd SECTION - OUR WORK--%>
 
     <%--START HOME PAGE 4th SECTION - ABOUT GEM-SHAE E--%>
-    <section class="p-2 pt-md-4 pb-md-4">
+    <section class="p-2 pb-md-5">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
+            <div class="row">
+                <hr class="rounded-hr" />
+                <div class="col-md-6 text-center pt-5">
+                    <br />
                     <h2>About Gem-Shae Enterprise</h2>
-                    <h6>Established in 2017, Gem-Shae Enterprise has developed and evolved to provide our clients with the best service in 
+                    <h5>Established in 2017, Gem-Shae Enterprise has developed and evolved to provide our clients with the best service in 
                         the world. So, whether you’re hosting a private party, corporate function, or wedding, let us help you make it one 
                         to remember. 
-                    </h6>
+                    </h5>
                     <asp:Button ID="HomeToAbout" runat="server" class="btn-lg" Text="Read More" BorderStyle="Groove" ForeColor="#0000CC" OnClick="HomeToAbout_Click" />
                 </div>
-                <div class="col-md-6">
-                    <asp:Image ID="DroneonStand" runat="server" ImageUrl="~/images/DroneOnStand.JPG" Width="400px" Class="img-fluid p-3" />
+                <div class="col-md-6 pb-4">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Image ID="DroneonStand" runat="server" ImageUrl="~/images/DroneOnStand.JPG" Width="400px" Class="img-fluid rounded float-right p-3" />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 </div>
             </div>
         </div>
     </section>
     <%--END HOME PAGE 4th SECTION - ABOUT GEM-SHAE E--%>
-
+    <br /> 
     <%--START HOME PAGE 5th SECTION - Subscribe--%>
         <section class="home-subscribe pt-3">
             <div class="row">
                 <div class="col-12 text-center">
                     <h3>Subscribe to get notified of new products </h3>
-                    <div class="input-group p-3">
-                        <input type="email" class="form-control" placeholder="Enter your email" />
-                        <span class="input-group-btn">
+                </div>
+            </div>
+            <div class="row">
+                <div class="container input-group pb-3">
+                        <input type="email" class="form-control" placeholder="Enter your email" aria-label="Enter your email" />
+                        <div class="input-group-btn">
                             <button class="btn btn-theme" type="submit"> Subscribe </button>
-                        </span>
-                    </div>
+                        </div>
                 </div>
             </div>
         </section>

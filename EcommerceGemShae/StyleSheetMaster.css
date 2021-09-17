@@ -10,11 +10,8 @@
 #bottom-header {
     background-color: #d35400;
 }
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
 ul li a {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     color: #30336b;
 }
@@ -22,7 +19,7 @@ ul li a {
 
 /* START FOOTER */
 .full-footer {
-    background-color: #6a89cc;
+    background-color: #0097e6;
 }
 .top-footer p {
     color: white;
@@ -35,39 +32,40 @@ ul li a {
     color: white;
 }
 .bottom-footer {
-    background-color: #F79F1F;
+    background-color: #e1b12c;
 }
-.bottom-footer p{
+.bottom-footer p {
     color: white;
-}
+    text-align: center;
+ }
 /* END FOOTER */
 
 /* START HOME PAGE */
 .top-section {
-    background-color: #4bcffa;
-    color:white;
+    background-color: #004d80;
+    color: white;
 }
-.qualities-img{
+.qualities-img {
     width: 150px;
 }
-.our-work-img {
-    border-radius: 50%;
-}
-.our-work-section{
-    background-color: #004d80;
+.rounded-hr {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+    border-color: #004d80;
 }
 .home-subscribe {
     background-color: #004d80;
     color: white;
+    border-radius: 5px;
 }
 .home-subscribe .form-control{
-    height: 40px;
-    border-color: transparent;
+    height: 35px;
     border-radius: 20px 0 0 20px;
-}
+    top: 0px;
+    left: 0px;
 }
 .home-subscribe .btn {
-    min-height: 40px;
+    min-height: 35px;
     border-radius: 0 20px 20px 0;
     background: #FC427B;
     color: #fff;
