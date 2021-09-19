@@ -1836,11 +1836,13 @@
     <Content Include="images\DroneInAir.JPG" />
     <Content Include="images\DroneOnStand.JPG" />
     <Content Include="images\high-quality.png" />
-    <Content Include="images\Fruit.jpg" />
     <Content Include="images\Igal.JPG" />
+    <Content Include="images\Dancer.jpg" />
+    <Content Include="images\Djing.JPG" />
+    <Content Include="images\Videoing.JPG" />
+    <Content Include="images\Shanya MS.jpg" />
     <Content Include="images\Jaida.JPG" />
     <Content Include="images\Shanya.JPG" />
-    <Content Include="images\MBCC.JPG" />
     <Content Include="images\press-conference.png" />
     <Content Include="images\Upendo.JPG" />
     <Content Include="Products.aspx" />

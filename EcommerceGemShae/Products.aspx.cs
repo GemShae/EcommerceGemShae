@@ -13,5 +13,10 @@ namespace EcommerceGemShae
         {
 
         }
+
+        protected void PhotoShootDescriptionTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
