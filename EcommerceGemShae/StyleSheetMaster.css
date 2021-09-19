@@ -103,3 +103,9 @@ ul li a {
     padding: 10px 20px;
 }
 /* END PRODUCT PAGE */
+
+/* START CONTACT PAGE */
+.address p{
+    font-weight: 600;
+}
+/* END CONTACT PAGE */
