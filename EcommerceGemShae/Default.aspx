@@ -20,7 +20,7 @@
                 
                 <div class="col-md-6">
                     <br />
-                    <img class="rounded img-fluid mx-auto d-block default-image" alt="Drone in Air" src="images/DroneInAir.JPG" height="280"/>
+                    <img class="rounded img-fluid mx-auto d-block default-image image-size" alt="Drone in Air" src="images/DroneInAir.JPG" height="280"/>
                 </div>
             </div>
         </div>
@@ -73,7 +73,7 @@
                     <asp:Button ID="HomeToAbout" runat="server" class="btn-lg" Text="Read More" BorderStyle="Groove" ForeColor="#0000CC" OnClick="HomeToAbout_Click" />
                 </div>
                 <div class="col-md-6 pb-4">
-                    <asp:Image ID="DroneonStand" runat="server" ImageUrl="~/images/DroneOnStand.JPG" Width="400px" Class="img-fluid rounded default-image p-3" /> 
+                    <asp:Image ID="DroneonStand" runat="server" ImageUrl="~/images/DroneOnStand.JPG" Width="400px" Class="img-fluid image-size rounded default-image p-3" /> 
                 </div>
             </div>
         </div>

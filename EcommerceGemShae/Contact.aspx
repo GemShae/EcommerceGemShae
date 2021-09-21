@@ -21,11 +21,11 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 text-center">
                     <p>
                         Would you like to ask a question regarding our products? Gem-Shae Specialists are here to advise and assist you. 
                         Send us your questions below and be sure to include your email address so we can reply to your request. 
-                        One of our specialists will contact you within 1 business day. <br />
+                        One of our specialists will contact you within 1 business day. <br /> <br />
                          
                         Thank you for your interest in Gem-Shae Enterprise!
                     </p>
@@ -44,10 +44,10 @@
                 <div class="col-md-6">
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <input id="FullNameText" type="text" class="form-control" placeholder="Full name *" />
+                            <input id="FullNameText" type="text" class="form-control" placeholder="Full name *" required="required" />
                         </div> 
                         <div class="form-group col-md-6">
-                            <input id="EmailText" type="email" class="form-control" placeholder="Email *" />
+                            <input id="EmailText" type="email" class="form-control" placeholder="Email *" required="required" />
                         </div> 
                     </div>
                     <div class="form-row">
@@ -57,7 +57,7 @@
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-12">
-                            <textarea id="TextAreaBody" rows="5" class="form-control" placeholder="Type your message here..."></textarea>
+                            <textarea id="TextAreaBody" rows="5" class="form-control" placeholder="Type your message here..." required="required"></textarea>
                         </div>  
                     </div>
                     <div class="form-row">
@@ -89,10 +89,10 @@
 
     <%--START CONTACT PAGE 4TH SECTION - MAP--%>
     <section>
-        <div class="container-fluid">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.246374233627!2d-77.92225418528!3d18.472496087437!2m3!1f0!2f0!3f0!3m
+        <div class="container-fluid text-center embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.246374233627!2d-77.92225418528!3d18.472496087437!2m3!1f0!2f0!3f0!3m
                 2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eda2a7b84c83d7f%3A0x568386f55f010d9d!2s18%20Water%20Ln%2C%20Montego%20Bay!5e0!3m2!1sen!2sjm!4v163168
-                1147545!5m2!1sen!2sjm" width="1415" height="400" frameborder="0" style="border:0"> </iframe>
+                1147545!5m2!1sen!2sjm" frameborder="0" style="border:0" width="1200" height="400"> </iframe>
         </div>
     </section>
     <%--END CONTACT PAGE 4TH SECTION - MAP--%>

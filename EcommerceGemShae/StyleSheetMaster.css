@@ -1,4 +1,8 @@
-﻿/* START NAVBAR */
+﻿.image-size {
+    max-width: 100%;
+    height: auto;
+}
+/* START NAVBAR */
 #top-header {
     background-color: #e1b12c;
 }
@@ -77,6 +81,7 @@ ul li a {
     margin-right: auto;
 }
 /* END HOME PAGE */
+
 /* START ABOUT PAGE */
 .breadcrumbs-section {
     background-color: #F8EFBA;

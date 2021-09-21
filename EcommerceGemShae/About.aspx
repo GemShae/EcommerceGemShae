@@ -28,7 +28,7 @@
                     <hr />
                 </div>
                 <div class="col-md-3 text-center">
-                    <img class="img-fluid" alt="Gem Logo" src="images/GEM logo.png" width="260" />
+                    <img class="img-fluid image-size" alt="Gem Logo" src="images/GEM logo.png" width="260" />
                 </div>
                 <div class="col-md-9 text-center">
                     <br /> 
