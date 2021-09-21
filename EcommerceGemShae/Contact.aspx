@@ -5,12 +5,16 @@
     <section class="breadcrumbs-section">
         <div class="container pl-3 p-sm-3">
             <div class="row">
-                <div class="col-12 pl-2">
+                <div class="col-md-9 pl-2">
                     <h2> <%: Title %> Us</h2>
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"> <a href="Default.aspx">Home</a> </li>
-                        <li class="breadcrumb-item active">Contact Us</li>
+                        <li class="breadcrumb-item active">About Us</li>
                     </ol>
+                </div>
+                <div class="col-md-3 text-center">
+                    <br /> <br />
+                    <img class="img-fluid image-size" alt="Gem Logo" src="images/GEM logo.png" width="120" />
                 </div>
             </div>
         </div>
@@ -92,7 +96,7 @@
         <div class="container-fluid text-center embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.246374233627!2d-77.92225418528!3d18.472496087437!2m3!1f0!2f0!3f0!3m
                 2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eda2a7b84c83d7f%3A0x568386f55f010d9d!2s18%20Water%20Ln%2C%20Montego%20Bay!5e0!3m2!1sen!2sjm!4v163168
-                1147545!5m2!1sen!2sjm" frameborder="0" style="border:0" width="1200" height="400"> </iframe>
+                1147545!5m2!1sen!2sjm" frameborder="0" style="border:0" width="1200" height="200"> </iframe>
         </div>
     </section>
     <%--END CONTACT PAGE 4TH SECTION - MAP--%>

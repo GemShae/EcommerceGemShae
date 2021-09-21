@@ -7,12 +7,16 @@
     <section class="breadcrumbs-section">
         <div class="container p-1 p-sm-3">
             <div class="row">
-                <div class="col-12 pl-2">
+                <div class="col-md-9 pl-2">
                     <h2> <%: Title %> Us</h2>
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"> <a href="Default.aspx">Home</a> </li>
                         <li class="breadcrumb-item active">About Us</li>
                     </ol>
+                </div>
+                <div class="col-md-3 text-center">
+                    <br /> <br />
+                    <img class="img-fluid image-size" alt="Gem Logo" src="images/GEM logo.png" width="120" />
                 </div>
             </div>
         </div>

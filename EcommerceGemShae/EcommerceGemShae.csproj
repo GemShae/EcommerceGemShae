@@ -1831,6 +1831,7 @@
     <Content Include="images\bank.png" />
     <Content Include="images\camera.png" />
     <Content Include="images\dancing.png" />
+    <Content Include="images\diamond.png" />
     <Content Include="images\GEM logo %28wide%29.png" />
     <Content Include="images\GEM logo.png" />
     <Content Include="images\DroneInAir.JPG" />
@@ -1839,6 +1840,8 @@
     <Content Include="images\Igal.JPG" />
     <Content Include="images\Dancer.jpg" />
     <Content Include="images\Djing.JPG" />
+    <Content Include="images\Official PAV Logo.png" />
+    <Content Include="images\Pinknd Blue.jpg" />
     <Content Include="images\Videoing.JPG" />
     <Content Include="images\Shanya MS.jpg" />
     <Content Include="images\Jaida.JPG" />

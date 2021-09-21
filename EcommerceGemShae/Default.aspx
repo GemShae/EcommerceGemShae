@@ -20,7 +20,7 @@
                 
                 <div class="col-md-6">
                     <br />
-                    <img class="rounded img-fluid mx-auto d-block default-image image-size" alt="Drone in Air" src="images/DroneInAir.JPG" height="280"/>
+                    <img class="rounded img-fluid mx-auto d-block default-image image-size" alt="Drone in Air" src="images/DroneInAir.JPG" height="200"/>
                 </div>
             </div>
         </div>
@@ -103,26 +103,26 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h3> Featured Products... </h3>
+                    <h3 style="font-family: 'Commercial Script BT', arial;"> Featured Products... </h3>
                 </div>
                 <hr />
             </div>
 
-            <div class="row">
+            <div class="row ">
                 <div class="col-md-4 text-center p-4">
                     <img class="img-fluid p-5 qualities-img" alt="Photography" src="images/camera.png" />
-                    <h4> Photgraphy </h4>
+                    <h4 style="font-family: 'Commercial Script BT', arial;"> Photgraphy </h4>
                     <p> We make sure to offer our cliente with photography packages that are available to them digitally to suit their 
                         unique needs and provide customizable choices they’re sure to love. </p>
                 </div>
                 <div class="col-md-4 text-center p-4">
                     <img class="img-fluid p-5 qualities-img" alt="On-Time" src="images/dancing.png" />
-                    <h4> Entertainment </h4>
+                    <h4 style="font-family: 'Commercial Script BT', arial;"> Entertainment </h4>
                     <p> You can trust our team to provide you with amazing entertainment at your event. Check out what we’ve got to offer. </p>
                 </div>
                 <div class="col-md-4 text-center p-4">
                     <img class="img-fluid p-5 qualities-img" alt="Value of Money" src="images/press-conference.png" />
-                    <h4> Motivational Speaking </h4>
+                    <h4 style="font-family: 'Commercial Script BT', arial;"> Motivational Speaking </h4>
                     <p> Professional speaking on topics related to theme of function. </p>
                 </div>
             </div>

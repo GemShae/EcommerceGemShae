@@ -21,6 +21,8 @@
     <link href="fontawesome/css/all.css" rel="stylesheet" />
     <%--My Created Css--%>
     <link href="StyleSheetMaster.css" rel="stylesheet" />
+    <%--Commercial Script Font--%>
+    <link href="https://allfont.net/allfont.css?fonts=commercial-script-bt" rel="stylesheet" type="text/css" />
 </head>
 
 <body>

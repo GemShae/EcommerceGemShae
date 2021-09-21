@@ -2,9 +2,12 @@
     max-width: 100%;
     height: auto;
 }
+body {
+    
+}
 /* START NAVBAR */
 #top-header {
-    background-color: #e1b12c;
+    background-color: #30336b;
 }
  #top-header a {
      color: white;
@@ -12,7 +15,7 @@
      font-size: 10px;
 }
 #bottom-header {
-    background-color: #d35400;
+    background-color: #ffcccc;
 }
 ul li a {
     font-size: 18px;
@@ -36,12 +39,12 @@ ul li a {
     color: white;
 }
 .bottom-footer {
-    background-color: #e1b12c;
+    background-color: #ffcccc
 }
 .bottom-footer p {
-    color: white;
-    text-align: center;
- }
+        color: #30336b;
+        text-align: center;
+    }
 /* END FOOTER */
 
 /* START HOME PAGE */
@@ -82,21 +85,28 @@ ul li a {
 }
 /* END HOME PAGE */
 
-/* START ABOUT PAGE */
+/* START BREADCRUMB PART */
 .breadcrumbs-section {
-    background-color: #F8EFBA;
+    background-color: #30336b;
+    color: white;
 }
 .breadcrumb {
     background-color: transparent;
 }
-/* END ABOUT PAGE */
+ol li {
+    color: white;
+}
+/* END BREADCRUMB PART */
 
 /* START PRODUCT PAGE */
 .product-image {
     width: 350px;
 }
 .product-polaroid {
-    background-color: white;
+    background-image: url('images/Pinknd Blue.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 25px;
 }
