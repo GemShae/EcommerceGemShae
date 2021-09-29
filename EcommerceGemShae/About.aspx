@@ -71,21 +71,21 @@
             <div class="row">
                 <div class="col-md-4 text-center p-4">
                     <img class="img-fluid p-5 qualities-img" alt="Ceo" src="images/Shanya.JPG" width="200" />
-                    <h5> Ceo </h5>
+                    <h4> Ceo </h4>
                     <p>  
                         <i>Shanya Connell</i>
                     </p>
                 </div>
                 <div class="col-md-4 text-center p-4">
                     <img class="img-fluid p-5 qualities-img" alt="Photographer" src="images/Jaida.JPG" width="200" />
-                    <h5> Photographer </h5>
+                    <h4> Photography Manager </h4>
                     <p>  
                         <i>Jaida Walker</i>
                     </p>
                 </div>
                 <div class="col-md-4 text-center p-4">
                     <img class="img-fluid p-5 qualities-img" alt="Dancer" src="images/Igal.JPG" width="200" height="30"/>
-                    <h5> Dancer </h5>
+                    <h4> Entertainment Manager </h4>
                     <p>  
                         <i>Igal Scott</i>
                     </p>

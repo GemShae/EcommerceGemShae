@@ -45,8 +45,13 @@ ul li a {
         color: #30336b;
         text-align: center;
     }
+#AdminLoginLinkButton{
+    text-decoration: none !important;
+}
+#AdminLoginLinkButton:hover {
+    color: #E1B12C;
+}
 /* END FOOTER */
-
 /* START HOME PAGE */
 .top-section {
     background-color: #004d80;
@@ -124,3 +129,13 @@ ol li {
     font-weight: 600;
 }
 /* END CONTACT PAGE */
+
+/* START USER LOGIN PAGE */
+.center {
+    margin: auto;
+}
+.card-border {
+    border-style: solid;
+    border-color: #1289A7;
+}
+/* END USER LOGIN PAGE */

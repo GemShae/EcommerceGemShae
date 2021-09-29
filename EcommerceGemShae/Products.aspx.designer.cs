@@ -15,183 +15,273 @@ namespace EcommerceGemShae
     {
 
         /// <summary>
-        /// PhotoShootIdLabel control.
+        /// ProductName1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label PhotoShootIdLabel;
+        protected global::System.Web.UI.WebControls.Label ProductName1;
 
         /// <summary>
-        /// PhotoShootDescriptionTextBox control.
+        /// ProductIDLabel1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox PhotoShootDescriptionTextBox;
+        protected global::System.Web.UI.WebControls.Label ProductIDLabel1;
 
         /// <summary>
-        /// CategoryPhotoShootLabel control.
+        /// ProductDescriptionTextBox1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label CategoryPhotoShootLabel;
+        protected global::System.Web.UI.WebControls.TextBox ProductDescriptionTextBox1;
 
         /// <summary>
-        /// PhotoShootUnitPriceLabel control.
+        /// ProductCategoryLabel1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label PhotoShootUnitPriceLabel;
+        protected global::System.Web.UI.WebControls.Label ProductCategoryLabel1;
 
         /// <summary>
-        /// DJIdLabel control.
+        /// ProductUnitPriceLabel1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label DJIdLabel;
+        protected global::System.Web.UI.WebControls.Label ProductUnitPriceLabel1;
 
         /// <summary>
-        /// DJDescriptionTextbox control.
+        /// ProductName2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox DJDescriptionTextbox;
+        protected global::System.Web.UI.WebControls.Label ProductName2;
 
         /// <summary>
-        /// CategoryAudioLabel control.
+        /// ProductIDLabel2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label CategoryAudioLabel;
+        protected global::System.Web.UI.WebControls.Label ProductIDLabel2;
 
         /// <summary>
-        /// DJUnitPriceLabel control.
+        /// ProductDescriptionTextBox2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label DJUnitPriceLabel;
+        protected global::System.Web.UI.WebControls.TextBox ProductDescriptionTextBox2;
 
         /// <summary>
-        /// DancerIdLabel control.
+        /// ProductCategoryLabel2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label DancerIdLabel;
+        protected global::System.Web.UI.WebControls.Label ProductCategoryLabel2;
 
         /// <summary>
-        /// DanceDescriptionTextbox control.
+        /// ProductUnitPriceLabel2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox DanceDescriptionTextbox;
+        protected global::System.Web.UI.WebControls.Label ProductUnitPriceLabel2;
 
         /// <summary>
-        /// CategoryEULabel control.
+        /// ProductName3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label CategoryEULabel;
+        protected global::System.Web.UI.WebControls.Label ProductName3;
 
         /// <summary>
-        /// DancerUnitPriceLabel control.
+        /// ProductIDLabel3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label DancerUnitPriceLabel;
+        protected global::System.Web.UI.WebControls.Label ProductIDLabel3;
 
         /// <summary>
-        /// MSIdLabel control.
+        /// ProductDescriptionTextBox3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label MSIdLabel;
+        protected global::System.Web.UI.WebControls.TextBox ProductDescriptionTextBox3;
 
         /// <summary>
-        /// MSDescriptionTextbox control.
+        /// ProductCategoryLabel3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox MSDescriptionTextbox;
+        protected global::System.Web.UI.WebControls.Label ProductCategoryLabel3;
 
         /// <summary>
-        /// CategoryEUMSLabel control.
+        /// ProductUnitPriceLabel3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label CategoryEUMSLabel;
+        protected global::System.Web.UI.WebControls.Label ProductUnitPriceLabel3;
 
         /// <summary>
-        /// MSUnitPriceLabel control.
+        /// ProductName4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label MSUnitPriceLabel;
+        protected global::System.Web.UI.WebControls.Label ProductName4;
 
         /// <summary>
-        /// VEIdLabel control.
+        /// ProductIDLabel4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label VEIdLabel;
+        protected global::System.Web.UI.WebControls.Label ProductIDLabel4;
 
         /// <summary>
-        /// VEDescriptionTextbox control.
+        /// ProductDescriptionTextBox4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox VEDescriptionTextbox;
+        protected global::System.Web.UI.WebControls.TextBox ProductDescriptionTextBox4;
 
         /// <summary>
-        /// CategoryVLabel control.
+        /// ProductCategoryLabel4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label CategoryVLabel;
+        protected global::System.Web.UI.WebControls.Label ProductCategoryLabel4;
 
         /// <summary>
-        /// VUnitPriceLabel control.
+        /// ProductUnitPriceLabel4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label VUnitPriceLabel;
+        protected global::System.Web.UI.WebControls.Label ProductUnitPriceLabel4;
+
+        /// <summary>
+        /// ProductName5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ProductName5;
+
+        /// <summary>
+        /// ProductIDLabel5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ProductIDLabel5;
+
+        /// <summary>
+        /// ProductDescriptionTextBox5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox ProductDescriptionTextBox5;
+
+        /// <summary>
+        /// ProductCategoryLabel5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ProductCategoryLabel5;
+
+        /// <summary>
+        /// ProductUnitPriceLabel5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ProductUnitPriceLabel5;
+
+        /// <summary>
+        /// ProductName6 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ProductName6;
+
+        /// <summary>
+        /// ProductIDLabel6 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ProductIDLabel6;
+
+        /// <summary>
+        /// ProductDescriptionTextBox6 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox ProductDescriptionTextBox6;
+
+        /// <summary>
+        /// ProductCategoryLabel6 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ProductCategoryLabel6;
+
+        /// <summary>
+        /// ProductUnitPriceLabel6 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ProductUnitPriceLabel6;
     }
 }

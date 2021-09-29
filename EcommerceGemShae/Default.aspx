@@ -10,8 +10,7 @@
                     <br /> <br /> 
                     <h4> "Changing Lives One Gem At A Time"</h4>
                     <h1>Best in Media Products</h1>
-                    <h5>We specialize in Photography, Videography, Audio including Dj'ing and Mixing of tracks, Motivational Speaking and 
-                        Entertainment including Singers and a Dance Unit.</h5>
+                    <h5>We specialize in Photography, Videography, Audio, Motivational Speaking and Entertainment.</h5>
                     <h4>Always remember that there's a GEM in everyone!</h4> <br />
                     
                     <asp:Button ID="HomeToProducts" runat="server" Text="View Products" BorderStyle="Groove" OnClick="HomeToProducts_Click" ForeColor="#0000CC" />
@@ -20,7 +19,7 @@
                 
                 <div class="col-md-6">
                     <br />
-                    <img class="rounded img-fluid mx-auto d-block default-image image-size" alt="Drone in Air" src="images/DroneInAir.JPG" height="200"/>
+                    <img class="rounded img-fluid mx-auto d-block default-image image-size" alt="Drone in Air" src="images/DroneInAir.JPG" width:"400px" />
                 </div>
             </div>
         </div>
@@ -112,18 +111,18 @@
                 <div class="col-md-4 text-center p-4">
                     <img class="img-fluid p-5 qualities-img" alt="Photography" src="images/camera.png" />
                     <h4 style="font-family: 'Commercial Script BT', arial;"> Photgraphy </h4>
-                    <p> We make sure to offer our cliente with photography packages that are available to them digitally to suit their 
+                    <p> We make sure to offer our cliente with photography products that are available to them digitally to suit their 
                         unique needs and provide customizable choices they’re sure to love. </p>
                 </div>
                 <div class="col-md-4 text-center p-4">
-                    <img class="img-fluid p-5 qualities-img" alt="On-Time" src="images/dancing.png" />
+                    <img class="img-fluid p-5 qualities-img" alt="Entertainment" src="images/dancing.png" />
                     <h4 style="font-family: 'Commercial Script BT', arial;"> Entertainment </h4>
                     <p> You can trust our team to provide you with amazing entertainment at your event. Check out what we’ve got to offer. </p>
                 </div>
                 <div class="col-md-4 text-center p-4">
-                    <img class="img-fluid p-5 qualities-img" alt="Value of Money" src="images/press-conference.png" />
+                    <img class="img-fluid p-5 qualities-img" alt="Motivational Speaking" src="images/press-conference.png" />
                     <h4 style="font-family: 'Commercial Script BT', arial;"> Motivational Speaking </h4>
-                    <p> Professional speaking on topics related to theme of function. </p>
+                    <p> Products to allow professional speaking on topics for your function. </p>
                 </div>
             </div>
         </div>

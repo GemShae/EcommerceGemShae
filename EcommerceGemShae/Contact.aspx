@@ -9,7 +9,7 @@
                     <h2> <%: Title %> Us</h2>
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"> <a href="Default.aspx">Home</a> </li>
-                        <li class="breadcrumb-item active">About Us</li>
+                        <li class="breadcrumb-item active">Contact Us</li>
                     </ol>
                 </div>
                 <div class="col-md-3 text-center">
