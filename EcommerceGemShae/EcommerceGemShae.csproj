@@ -1830,7 +1830,9 @@
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="images\4K Camcorder ZOHULU.jpg" />
     <Content Include="images\actual.png" />
+    <Content Include="images\admin user.png" />
     <Content Include="images\bank.png" />
+    <Content Include="images\Banner.png" />
     <Content Include="images\Bonnlo Classic Lectern Podium Stand.jpg" />
     <Content Include="images\camera.png" />
     <Content Include="images\Canon EOS 6D Mark II.jpg" />
@@ -1883,6 +1885,7 @@
     <Content Include="Site.Master" />
     <Content Include="StyleSheetMaster.css" />
     <Content Include="UserLogin.aspx" />
+    <Content Include="UserProfile.aspx" />
     <Content Include="UserSignUp.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -1951,6 +1954,13 @@
     </Compile>
     <Compile Include="UserLogin.aspx.designer.cs">
       <DependentUpon>UserLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserProfile.aspx.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserProfile.aspx.designer.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserSignUp.aspx.cs">
       <DependentUpon>UserSignUp.aspx</DependentUpon>

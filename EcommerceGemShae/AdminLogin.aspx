@@ -4,20 +4,21 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-6 mx-auto center card-border">
+            <br /> <br />
+            <div class="col-md-6 mx-auto center card-border product-polaroid">
                 <div class="card">
                     <div class="card-body">
                         <div class="row">
                             <br /> <br />
                             <div class="col">
-                                <center> <img width="150" alt="User Icon" src="images/user.png" /> </center>
+                                <center> <img width="150" alt="Admin User Icon" src="images/admin user.png" /> </center>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col">
                                 <center>
-                                    <h3>Member Login</h3>
+                                    <h3>Admin Login</h3>
                                 </center>
                             </div>
                         </div>
@@ -29,32 +30,23 @@
                         </div>
 
                         <div class="row">
-                            <div class="col">
-                                <label>Member ID</label>
+                            <div class="col-md-12">
                                 <div class="form-group">
-                                    <asp:TextBox ID="MemberIDTextBox" runat="server" CssClass="form-control" placeholder="Member ID"></asp:TextBox>
+                                    <asp:TextBox ID="MemberIDTextBox" runat="server" CssClass="form-control" placeholder="Admin ID"></asp:TextBox>
                                 </div>
 
-                                <label>Password</label>
                                 <div class="form-group">
-                                    <asp:TextBox ID="MemberPasswordTextBox" runat="server" CssClass="form-control" placeholder="Member Password" TextMode="Password"></asp:TextBox>
+                                    <asp:TextBox ID="MemberPasswordTextBox" runat="server" CssClass="form-control" placeholder="Admin Password" TextMode="Password"></asp:TextBox>
                                 </div>
 
                                 <div class="form-group">
                                     <asp:Button ID="LoginButton" runat="server" Text="Login" class="btn btn-success btn-block btn-lg" />
                                 </div>
-                                <div class="form-group">
-                                    <a href="UserSignUp.aspx">
-                                        <input id="SignUpButton" type="button" value="Signup" class="btn btn-info btn-block btn-lg" />
-                                    </a>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <a href="Default.aspx"> << Back to Home</a> 
-                <br /> <br />
             </div>
         </div>
     </div>

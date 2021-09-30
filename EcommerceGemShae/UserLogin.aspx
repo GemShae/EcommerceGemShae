@@ -4,7 +4,8 @@
    
     <div class="container">
         <div class="row">
-            <div class="col-md-6 mx-auto center card-border">
+            <br /> <br />
+            <div class="col-md-6 mx-auto center card-border product-polaroid">
                 <div class="card">
                     <div class="card-body">
                         <div class="row">
@@ -29,7 +30,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="col">
+                            <div class="col-md-12">
                                 <label>Member ID</label>
                                 <div class="form-group">
                                     <asp:TextBox ID="MemberIDTextBox" runat="server" CssClass="form-control" placeholder="Member ID"></asp:TextBox>
@@ -45,7 +46,7 @@
                                 </div>
                                 <div class="form-group">
                                     <a href="UserSignUp.aspx">
-                                        <input id="SignUpButton" type="button" value="Signup" class="btn btn-info btn-block btn-lg" />
+                                        <input id="SignUpButton" type="button" value="Sign Up" class="btn btn-info btn-block btn-lg" />
                                     </a>
                                 </div>
                             </div>

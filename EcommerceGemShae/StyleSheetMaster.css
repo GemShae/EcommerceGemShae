@@ -52,6 +52,7 @@ ul li a {
     color: #E1B12C;
 }
 /* END FOOTER */
+
 /* START HOME PAGE */
 .top-section {
     background-color: #004d80;
@@ -138,4 +139,7 @@ ol li {
     border-style: solid;
     border-color: #1289A7;
 }
+    .card-border a {
+        color: #E1B12C;
+    }
 /* END USER LOGIN PAGE */
