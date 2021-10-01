@@ -6,8 +6,11 @@
         <div class="row">
             <br /> <br />
             <div class="col-md-8 mx-auto center card-border product-polaroid">
+
                 <div class="card">
                     <div class="card-body">
+
+                        <%--IMAGE ROW--%>
                         <div class="row">
                             <br /> <br />
                             <div class="col">
@@ -15,6 +18,7 @@
                             </div>
                         </div>
 
+                        <%--TITLE ROW--%>
                         <div class="row">
                             <div class="col">
                                 <center>
@@ -23,12 +27,14 @@
                             </div>
                         </div>
 
+                        <%--HR ROW--%>
                         <div class="row">
                             <div class="col">
                                 <hr class="rounded-hr" />
                             </div>
                         </div>
 
+                        <%--COL 6 - NAME & DOB ROW--%>
                         <div class="row">
                             <div class="col-md-6">
                                 <label>Full Name</label>
@@ -45,6 +51,7 @@
                             </div>
                         </div>
 
+                        <%--COL 6 - CONTACT # & EMAIL ROW--%>
                         <div class="row">
                             <div class="col-md-6">
                                 <label>Contact Number</label>
@@ -61,6 +68,7 @@
                             </div>
                         </div>
 
+                        <%--COL 4 - COUNTRY,CITY & ZIP CODE ROW--%>
                         <div class="row">
                             <div class="col-md-4">
                                 <label>Country</label>
@@ -89,6 +97,7 @@
                             </div>
                         </div>
 
+                        <%--COL 12 - FULL ADDRESS ROW--%>
                         <div class="row">
                             <div class="col-md-12">
                                 <label>Full Address</label>
@@ -98,15 +107,16 @@
                             </div>
                         </div>
 
+                        <%--COL 12 - LOGIN DIVIDER ROW--%>
                         <div class="row">
                                 <div class="col-md-12">
                                     <center>
-                                        <span class="badge badge-pill badge-info">Login Credentials</span>
+                                        <span class="badge badge-pill badge-info" style="color:#E1B12C">Login Credentials</span>
                                     </center>
-                                </div>
-                            
+                                </div>    
                         </div>
 
+                        <%--COL 6 - ID & PASSWORD ROW--%>
                         <div class="row">
                             <div class="col-md-6">
                                 <label>User ID</label>
@@ -123,6 +133,7 @@
                             </div>
                         </div>
 
+                        <%--COL 12 -BUTTON ROW--%>
                         <div class="row text-center">
                             <div class="col-md-12 text-center"> 
                                 <div class="form-group">
