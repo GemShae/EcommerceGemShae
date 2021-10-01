@@ -9,6 +9,7 @@
                 <div class="card">
                     <div class="card-body">
 
+                        <%--TITLE ROW--%>
                         <div class="row">
                             <br /> <br />
                             <div class="col">
@@ -18,20 +19,23 @@
                             </div>
                         </div>
 
+                        <%--IMAGE ROW--%>
                         <div class="row">
                             <div class="col">
                                 <center> <img width="100" alt="User Icon" src="images/user.png" /> </center>
                             </div>
                         </div>
 
+                        <%--HR ROW--%>
                         <div class="row">
                             <div class="col">
                                 <hr class="rounded-hr" />
                             </div>
                         </div>
 
+                        <%--COL 4,6 - ID & NAME ROW--%>
                         <div class="row">
-                            <div class="col-md-3">
+                            <div class="col-md-4">
                                 <label>User ID</label>
                                 <div class="form-group">
                                     <div class="input-group">
@@ -41,14 +45,17 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-4">
+                            <div class="col-md-6">
                                 <label>Full Name</label>
                                 <div class="form-group">
                                     <asp:TextBox ID="FullNameTextBox" runat="server" CssClass="form-control" placeholder="Full Name" ReadOnly="True"></asp:TextBox>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="col-md-5">
+                        <%--COL 6 - ACCOUNT STATUS & DOB ROW--%>
+                        <div class="row">
+                            <div class="col-md-6">
                                 <label>Account Status</label>
                                 <div class="form-group">
                                     <div class="input-group">
@@ -58,24 +65,26 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="row">
-                            <div class="col-md-3">
+                            <div class="col-md-6">
                                 <label>Date of Birth</label>
                                 <div class="form-group">
                                     <asp:TextBox ID="DOBTextBox" runat="server" CssClass="form-control" placeholder="dd-mm-yyyy" TextMode="Date" ReadOnly="True"></asp:TextBox>
                                 </div>
                             </div>
 
-                            <div class="col-md-4">
+                        </div>
+
+                        <%--COL 6 - CONTACT # & EMAIL ROW--%>
+                        <div class="row">
+                            <div class="col-md-6">
                                 <label>Contact Number</label>
                                 <div class="form-group">
                                     <asp:TextBox ID="ContNumTextBox" runat="server" CssClass="form-control" placeholder="Contact #" TextMode="Phone" ReadOnly="True"></asp:TextBox>
                                 </div>
                             </div>
 
-                            <div class="col-md-5">
+                            <div class="col-md-6">
                                 <label>Email Address</label>
                                 <div class="form-group">
                                     <asp:TextBox ID="EmailTextBox" runat="server" CssClass="form-control" placeholder="Email Address" TextMode="Email" ReadOnly="True"></asp:TextBox>
@@ -83,6 +92,7 @@
                             </div>
                         </div>
 
+                        <%--COL 4 - COUNTRY,CITY & ZIP CODE ROW--%>
                         <div class="row">
                             <div class="col-md-4">
                                 <label>Country</label>
@@ -106,6 +116,7 @@
                             </div>
                         </div>
 
+                        <%--COL 12 - FULL ADDRESS ROW--%>
                         <div class="row">
                             <div class="col-md-12">
                                 <label>Full Address</label>
@@ -115,8 +126,9 @@
                             </div>
                         </div>
 
+                        <%--COL 12 -BUTTON ROW--%>
                         <div class="row text-center">
-                            <div class="col-md-8 text-center mx-auto"> 
+                            <div class="col-md-12 text-center mx-auto"> 
                                     <center>
                                         <asp:Button ID="DeletePermButton" runat="server" Text="Delete User Permanently" class="btn btn-danger btn-block btn-lg" />
                                     </center>
@@ -126,6 +138,7 @@
                     </div>
                 </div>
 
+                <br />
                 <a href="Default.aspx"> <b> << Back to Home </b> </a> 
                 <br /> <br />
             </div>
