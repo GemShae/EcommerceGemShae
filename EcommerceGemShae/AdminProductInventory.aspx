@@ -9,6 +9,7 @@
                 <div class="card">
                     <div class="card-body">
 
+                        <%--TITLE ROW--%>
                         <div class="row">
                             <br /> <br />
                             <div class="col">
@@ -18,26 +19,32 @@
                             </div>
                         </div>
 
+                        <%--IMAGE ROW--%>
                         <div class="row">
                             <div class="col">
-                                <center> <img width="350" alt="User Icon" src="images/GEM logo (wide).png" /> </center>
+                                <center> <img width="300" alt="User Icon" src="images/GEM logo (wide).png" /> </center>
                             </div>
                         </div>
 
+                        <%--HR ROW--%>
                         <div class="row">
                             <div class="col">
                                 <hr class="rounded-hr" />
                             </div>
                         </div>
 
+                        <%--COL 12 - FILE IMAGE UPLOAD--%>
                         <div class="row">
-                            <div class="col">
+                            <div class="col-md-12">
                                 <asp:FileUpload ID="ImageFileUpload" runat="server" class="form-control"/>
                             </div>
                         </div>
 
+                        <br />
+
+                        <%--COL 4,8 - PRODUCT ID & NAME--%>
                         <div class="row">
-                            <div class="col-md-3">
+                            <div class="col-md-4">
                                 <label>Product ID</label>
                                 <div class="form-group">
                                     <div class="input-group">
@@ -47,7 +54,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-9">
+                            <div class="col-md-8">
                                 <label>Product Name</label>
                                 <div class="form-group">
                                     <asp:TextBox ID="ProductNameTextBox" runat="server" CssClass="form-control" placeholder="Product Name"></asp:TextBox>
@@ -55,6 +62,7 @@
                             </div>
                         </div>
 
+                        <%--COL 12 - CATEGORY--%>
                         <div class="row">
                             <div class="col-md-12">
                                 <label>Category</label>
@@ -70,6 +78,7 @@
                             </div>
                         </div>
                        
+                        <%--COL 12 - PRODUCT COST--%>
                         <div class="row">
                             <div class="col-md-12">
                                 <label>Product Cost (Per Unit)</label>
@@ -79,6 +88,7 @@
                             </div>
                         </div>
 
+                        <%--COL 4,4,4 - A & C STOCK + SOLD--%>
                         <div class="row">
                             <div class="col-md-4">
                                 <label>Actual Stock</label>
@@ -111,6 +121,7 @@
                             </div>
                         </div>
 
+                        <%--COL 12 - BUTTONS--%>
                         <div class="row">
                             <div class="col-md-4"> 
                                 <asp:Button ID="AddButton" runat="server" Text="Add" class="btn btn-success btn-block btn-lg" />
@@ -125,7 +136,7 @@
 
                     </div>
                 </div>
-
+                <br />
                 <a href="Default.aspx"> <b> << Back to Home </b> </a> 
                 <br /> <br />
             </div>
