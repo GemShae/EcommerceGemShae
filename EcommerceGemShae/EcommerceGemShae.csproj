@@ -107,6 +107,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="AdminLogin.aspx" />
+    <Content Include="AdminProductInventory.aspx" />
     <Content Include="AdminUserManagement.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -1900,6 +1901,13 @@
     </Compile>
     <Compile Include="AdminLogin.aspx.designer.cs">
       <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminProductInventory.aspx.cs">
+      <DependentUpon>AdminProductInventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminProductInventory.aspx.designer.cs">
+      <DependentUpon>AdminProductInventory.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminUserManagement.aspx.cs">
       <DependentUpon>AdminUserManagement.aspx</DependentUpon>
