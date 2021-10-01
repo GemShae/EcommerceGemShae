@@ -6,8 +6,11 @@
         <div class="row">
             <br /> <br />
             <div class="col-md-5 card-border product-polaroid">
+
                 <div class="card">
                     <div class="card-body">
+
+                        <%--IMAGE ROW--%>
                         <div class="row">
                             <br /> <br />
                             <div class="col">
@@ -15,6 +18,7 @@
                             </div>
                         </div>
 
+                        <%--TITLE ROW & ACCOUNT STATUS--%>
                         <div class="row">
                             <div class="col">
                                 <center>
@@ -26,12 +30,14 @@
                             </div>
                         </div>
 
+                        <%--HR ROW--%>
                         <div class="row">
                             <div class="col">
                                 <hr class="rounded-hr" />
                             </div>
                         </div>
 
+                        <%--COL 6 - NAME & DOB ROW--%>
                         <div class="row">
                             <div class="col-md-6">
                                 <label>Full Name</label>
@@ -48,6 +54,7 @@
                             </div>
                         </div>
 
+                        <%--COL 6 - CONTACT # & EMAIL ROW--%>
                         <div class="row">
                             <div class="col-md-6">
                                 <label>Contact Number</label>
@@ -64,6 +71,7 @@
                             </div>
                         </div>
 
+                        <%--COL 4 - COUNTRY,CITY & ZIP CODE ROW--%>
                         <div class="row">
                             <div class="col-md-4">
                                 <label>Country</label>
@@ -92,6 +100,7 @@
                             </div>
                         </div>
 
+                        <%--COL 12 - FULL ADDRESS ROW--%>
                         <div class="row">
                             <div class="col-md-12">
                                 <label>Full Address</label>
@@ -101,15 +110,16 @@
                             </div>
                         </div>
 
+                        <%--COL 12 - LOGIN DIVIDER ROW--%>
                         <div class="row">
                                 <div class="col-md-12">
                                     <center>
-                                        <span class="badge badge-pill badge-info">Login Credentials</span>
+                                        <span class="badge badge-pill badge-info" style="color:#E1B12C">Login Credentials</span>
                                     </center>
                                 </div>
-                            
                         </div>
 
+                        <%--COL 6 - ID & PASSWORD ROW--%>
                         <div class="row">
                             <div class="col-md-4">
                                 <label>User ID</label>
@@ -133,6 +143,7 @@
                             </div>
                         </div>
 
+                        <%--COL 12 -BUTTON ROW--%>
                         <div class="row text-center">
                             <div class="col-md-12 text-center mx-auto"> 
                                 <div class="form-group">
@@ -151,12 +162,15 @@
             </div>
 
             <div class="col-md-7 card-border product-polaroid">
+
                 <div class="card">
                     <div class="card-body">
+
+                        <%--COL 12 -BANNER ROW--%>
                         <div class="row">
                             <br /> <br />
                             <div class="col">
-                                <center> <img width="500" alt="GemShae Banner" src="images/Banner.png" class="image-size" /> </center>
+                                <center> <img width="350" alt="GemShae Banner" src="images/Banner.png" class="image-size" /> </center>
                             </div>
                         </div>
 
