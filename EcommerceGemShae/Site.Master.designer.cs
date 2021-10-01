@@ -69,6 +69,15 @@ namespace EcommerceGemShae
         protected global::System.Web.UI.WebControls.LinkButton AdminLoginLinkButton;
 
         /// <summary>
+        /// ProductInventoryLinkButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton ProductInventoryLinkButton;
+
+        /// <summary>
         /// ManageUsersLinkButton control.
         /// </summary>
         /// <remarks>

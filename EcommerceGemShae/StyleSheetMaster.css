@@ -45,12 +45,12 @@ ul li a {
         color: #30336b;
         text-align: center;
     }
-#AdminLoginLinkButton{
+.adminLinks{
     text-decoration: none !important;
 }
-#AdminLoginLinkButton:hover {
-    color: #E1B12C;
-}
+    .adminLinks:hover {
+        color: #E1B12C;
+    }
 /* END FOOTER */
 
 /* START HOME PAGE */

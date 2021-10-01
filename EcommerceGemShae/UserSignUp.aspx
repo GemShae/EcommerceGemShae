@@ -118,17 +118,24 @@
 
                         <%--COL 6 - ID & PASSWORD ROW--%>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <label>User ID</label>
                                 <div class="form-group">
                                     <asp:TextBox ID="IDTextBox" runat="server" class="form-control" placeholder="User ID"></asp:TextBox>
                                 </div>
                             </div>
 
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <label>Password</label>
                                 <div class="form-group">
                                     <asp:TextBox ID="PasswordTextBox" runat="server" class="form-control" placeholder="Password" TextMode="Password"></asp:TextBox>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label> Confirm Password</label>
+                                <div class="form-group">
+                                    <asp:TextBox ID="ConfirmPasswordTextBox" runat="server" class="form-control" placeholder="Confirm Password" TextMode="Password"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -138,7 +145,7 @@
                             <div class="col-md-12 text-center"> 
                                 <div class="form-group">
                                     <center>
-                                        <asp:Button ID="SignUpButton" runat="server" Text="Sign Up" class="btn btn-success btn-block btn-lg" />
+                                        <asp:Button ID="SignUpButton" runat="server" Text="Sign Up" class="btn btn-success btn-block btn-lg" OnClick="SignUpButton_Click" />
                                     </center>
                                 </div>
                             </div>
@@ -149,6 +156,8 @@
 
                 <a href="Default.aspx"> <b> << Back to Home </b> </a> 
                 <br /> <br />
+
+                <asp:Label ID="Label1" runat="server" Text="Sumn" style="color:#E1B12C"></asp:Label>
             </div>
         </div>
     </div>

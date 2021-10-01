@@ -13,5 +13,30 @@ namespace EcommerceGemShae
         {
 
         }
+
+        protected void AdminLoginLinkButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AdminLogin.aspx");
+        }
+
+        protected void ProductInventoryLinkButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AdminProductInventory.aspx");
+        }
+
+        protected void ManageUsersLinkButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AdminUserManagement.aspx");
+        }
+
+        protected void UserLoginLinkButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("UserLogin.aspx");
+        }
+
+        protected void SignUpLinkButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("UserSignUp.aspx");
+        }
     }
 }
