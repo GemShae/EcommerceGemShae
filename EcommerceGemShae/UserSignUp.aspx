@@ -18,7 +18,7 @@
                         <div class="row">
                             <div class="col">
                                 <center>
-                                    <h4>Member Registration</h4>
+                                    <h4>User Registration</h4>
                                 </center>
                             </div>
                         </div>
@@ -111,7 +111,7 @@
                             <div class="col-md-6">
                                 <label>User ID</label>
                                 <div class="form-group">
-                                    <asp:TextBox ID="IDTextBox" runat="server" class="form-control" placeholder="Member ID"></asp:TextBox>
+                                    <asp:TextBox ID="IDTextBox" runat="server" class="form-control" placeholder="User ID"></asp:TextBox>
                                 </div>
                             </div>
 

@@ -11,17 +11,26 @@ namespace EcommerceGemShae
 {
 
 
-    public partial class UserProfile
+    public partial class AdminUserManagement
     {
 
         /// <summary>
-        /// AccStatusLabel control.
+        /// USerIDTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label AccStatusLabel;
+        protected global::System.Web.UI.WebControls.TextBox USerIDTextBox;
+
+        /// <summary>
+        /// GoSearchLinkButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton GoSearchLinkButton;
 
         /// <summary>
         /// FullNameTextBox control.
@@ -31,6 +40,33 @@ namespace EcommerceGemShae
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox FullNameTextBox;
+
+        /// <summary>
+        /// AccStatusTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox AccStatusTextBox;
+
+        /// <summary>
+        /// ActiveLinkButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton ActiveLinkButton;
+
+        /// <summary>
+        /// DeactivateLinkButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton DeactivateLinkButton;
 
         /// <summary>
         /// DOBTextBox control.
@@ -60,13 +96,13 @@ namespace EcommerceGemShae
         protected global::System.Web.UI.WebControls.TextBox EmailTextBox;
 
         /// <summary>
-        /// CountryDropDownList control.
+        /// CountryTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList CountryDropDownList;
+        protected global::System.Web.UI.WebControls.TextBox CountryTextBox;
 
         /// <summary>
         /// CityTextBox control.
@@ -96,48 +132,21 @@ namespace EcommerceGemShae
         protected global::System.Web.UI.WebControls.TextBox AddressTextBox;
 
         /// <summary>
-        /// IDTextBox control.
+        /// DeletePermButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox IDTextBox;
+        protected global::System.Web.UI.WebControls.Button DeletePermButton;
 
         /// <summary>
-        /// PasswordTextBox control.
+        /// UserListGridView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox PasswordTextBox;
-
-        /// <summary>
-        /// TextBox1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
-
-        /// <summary>
-        /// UpdateButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button UpdateButton;
-
-        /// <summary>
-        /// PastPurchasesGridView control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView PastPurchasesGridView;
+        protected global::System.Web.UI.WebControls.GridView UserListGridView;
     }
 }

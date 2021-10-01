@@ -107,6 +107,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="AdminLogin.aspx" />
+    <Content Include="AdminUserManagement.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -1899,6 +1900,13 @@
     </Compile>
     <Compile Include="AdminLogin.aspx.designer.cs">
       <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUserManagement.aspx.cs">
+      <DependentUpon>AdminUserManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminUserManagement.aspx.designer.cs">
+      <DependentUpon>AdminUserManagement.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">

@@ -18,7 +18,7 @@
                         <div class="row">
                             <div class="col">
                                 <center>
-                                    <h3>Member Login</h3>
+                                    <h3>User Login</h3>
                                 </center>
                             </div>
                         </div>
@@ -31,14 +31,14 @@
 
                         <div class="row">
                             <div class="col-md-12">
-                                <label>Member ID</label>
+                                <label>User ID</label>
                                 <div class="form-group">
-                                    <asp:TextBox ID="MemberIDTextBox" runat="server" CssClass="form-control" placeholder="Member ID"></asp:TextBox>
+                                    <asp:TextBox ID="MemberIDTextBox" runat="server" CssClass="form-control" placeholder="User ID"></asp:TextBox>
                                 </div>
 
                                 <label>Password</label>
                                 <div class="form-group">
-                                    <asp:TextBox ID="MemberPasswordTextBox" runat="server" CssClass="form-control" placeholder="Member Password" TextMode="Password"></asp:TextBox>
+                                    <asp:TextBox ID="MemberPasswordTextBox" runat="server" CssClass="form-control" placeholder="User Password" TextMode="Password"></asp:TextBox>
                                 </div>
 
                                 <div class="form-group">
