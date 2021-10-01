@@ -6,8 +6,11 @@
         <div class="row">
             <br /> <br />
             <div class="col-md-6 mx-auto center card-border product-polaroid">
+
                 <div class="card">
                     <div class="card-body">
+
+                        <%--IMAGE ROW--%>
                         <div class="row">
                             <br /> <br />
                             <div class="col">
@@ -15,6 +18,7 @@
                             </div>
                         </div>
 
+                        <%--TITLE ROW--%>
                         <div class="row">
                             <div class="col">
                                 <center>
@@ -23,12 +27,14 @@
                             </div>
                         </div>
 
+                        <%--HR ROW--%>
                         <div class="row">
                             <div class="col">
                                 <hr class="rounded-hr" />
                             </div>
                         </div>
 
+                        <%--COL 12 - FULL DETAILS ROW--%>
                         <div class="row">
                             <div class="col-md-12">
                                 <label>User ID</label>
@@ -54,7 +60,7 @@
                     </div>
                 </div>
 
-                <a href="Default.aspx"> << Back to Home</a> 
+                <a href="Default.aspx"> << <b> Back to Home </b></a> 
                 <br /> <br />
             </div>
         </div>
