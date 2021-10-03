@@ -11,6 +11,33 @@ namespace EcommerceGemShae
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            ProductListGridView.DataBind();
+        }
+
+        protected void GoSearchLinkButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void AddButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void UpdateButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void DeleteButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //My Functions
+
+        void addNewBook()
+        {
 
         }
     }

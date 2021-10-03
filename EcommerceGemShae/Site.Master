@@ -12,6 +12,10 @@
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
 
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="images/GEM logo.png" rel="shortcut icon" type="image/x-icon" />
 
@@ -23,6 +27,12 @@
     <link href="StyleSheetMaster.css" rel="stylesheet" />
     <%--Commercial Script Font--%>
     <link href="https://allfont.net/allfont.css?fonts=commercial-script-bt" rel="stylesheet" type="text/css" />
+
+    <script src="Scripts/jquery-3.4.1.slim.min.js"></script>
+
+    <%--Datatables js--%>
+    <script src="datatables/js/jquery.dataTables.min.js"></script>
+
 </head>
 
 <body>
@@ -86,7 +96,7 @@
                                     <asp:LinkButton ID="SignUpLinkButton" runat="server" ForeColor="#E1B12C" OnClick="SignUpLinkButton_Click">Sign Up</asp:LinkButton>
                                 </li>
                                 <li >
-                                    <asp:LinkButton ID="LogoutLinkButton" runat="server" ForeColor="#E1B12C" Visible="False">Logout</asp:LinkButton>
+                                    <asp:LinkButton ID="LogoutLinkButton" runat="server" ForeColor="#E1B12C" Visible="False" OnClick="LogoutLinkButton_Click">Logout</asp:LinkButton>
                                 </li>
                                 <li >
                                     <asp:LinkButton ID="HelloUserLinkButton" runat="server" ForeColor="#E1B12C" Visible="False">Hello User</asp:LinkButton>

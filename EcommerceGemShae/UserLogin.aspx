@@ -39,17 +39,20 @@
                             <div class="col-md-12">
                                 <label>User ID</label>
                                 <div class="form-group">
-                                    <asp:TextBox ID="MemberIDTextBox" runat="server" CssClass="form-control" placeholder="User ID"></asp:TextBox>
+                                    <asp:TextBox ID="UserIDTextBox" runat="server" CssClass="form-control" placeholder="User ID"></asp:TextBox>
                                 </div>
 
                                 <label>Password</label>
                                 <div class="form-group">
-                                    <asp:TextBox ID="MemberPasswordTextBox" runat="server" CssClass="form-control" placeholder="User Password" TextMode="Password"></asp:TextBox>
+                                    <asp:TextBox ID="UserPasswordTextBox" runat="server" CssClass="form-control" placeholder="User Password" TextMode="Password"></asp:TextBox>
                                 </div>
 
                                 <div class="form-group">
-                                    <asp:Button ID="LoginButton" runat="server" Text="Login" class="btn btn-success btn-block btn-lg" />
+                                    <asp:Button ID="LoginButton" runat="server" Text="Login" class="btn btn-success btn-block btn-lg" OnClick="LoginButton_Click" />
                                 </div>
+
+                                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:UserLoginConnectionString %>" SelectCommand="SELECT * FROM [user_master]"></asp:SqlDataSource>
+
                                 <div class="form-group">
                                     <a href="UserSignUp.aspx">
                                         <input id="SignUpButton" type="button" value="Sign Up" class="btn btn-info btn-block btn-lg" />

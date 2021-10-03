@@ -24,6 +24,24 @@ namespace EcommerceGemShae
         protected global::System.Web.UI.WebControls.TextBox FullNameTextBox;
 
         /// <summary>
+        /// FullNameRequiredFieldValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator FullNameRequiredFieldValidator;
+
+        /// <summary>
+        /// FullNameRegularExpressionValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator FullNameRegularExpressionValidator;
+
+        /// <summary>
         /// DOBTextBox control.
         /// </summary>
         /// <remarks>
@@ -42,6 +60,15 @@ namespace EcommerceGemShae
         protected global::System.Web.UI.WebControls.TextBox ContNumTextBox;
 
         /// <summary>
+        /// ContNumRegularExpressionValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator ContNumRegularExpressionValidator;
+
+        /// <summary>
         /// EmailTextBox control.
         /// </summary>
         /// <remarks>
@@ -49,6 +76,15 @@ namespace EcommerceGemShae
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox EmailTextBox;
+
+        /// <summary>
+        /// EmailRequiredFieldValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator EmailRequiredFieldValidator;
 
         /// <summary>
         /// CountryDropDownList control.
@@ -60,6 +96,15 @@ namespace EcommerceGemShae
         protected global::System.Web.UI.WebControls.DropDownList CountryDropDownList;
 
         /// <summary>
+        /// CountryRequiredFieldValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator CountryRequiredFieldValidator;
+
+        /// <summary>
         /// CityTextBox control.
         /// </summary>
         /// <remarks>
@@ -67,6 +112,15 @@ namespace EcommerceGemShae
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox CityTextBox;
+
+        /// <summary>
+        /// CityRequiredFieldValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator CityRequiredFieldValidator;
 
         /// <summary>
         /// ZipCodeTextBox control.
@@ -78,6 +132,15 @@ namespace EcommerceGemShae
         protected global::System.Web.UI.WebControls.TextBox ZipCodeTextBox;
 
         /// <summary>
+        /// ZipCodeRequiredFieldValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ZipCodeRequiredFieldValidator;
+
+        /// <summary>
         /// AddressTextBox control.
         /// </summary>
         /// <remarks>
@@ -85,6 +148,15 @@ namespace EcommerceGemShae
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox AddressTextBox;
+
+        /// <summary>
+        /// AddressRequiredFieldValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator AddressRequiredFieldValidator;
 
         /// <summary>
         /// IDTextBox control.
@@ -96,6 +168,15 @@ namespace EcommerceGemShae
         protected global::System.Web.UI.WebControls.TextBox IDTextBox;
 
         /// <summary>
+        /// UserIdRequiredFieldValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator UserIdRequiredFieldValidator;
+
+        /// <summary>
         /// PasswordTextBox control.
         /// </summary>
         /// <remarks>
@@ -103,6 +184,15 @@ namespace EcommerceGemShae
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox PasswordTextBox;
+
+        /// <summary>
+        /// PasswordRequiredFieldValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator PasswordRequiredFieldValidator;
 
         /// <summary>
         /// ConfirmPasswordTextBox control.
@@ -114,6 +204,24 @@ namespace EcommerceGemShae
         protected global::System.Web.UI.WebControls.TextBox ConfirmPasswordTextBox;
 
         /// <summary>
+        /// CPasswordRequiredFieldValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator CPasswordRequiredFieldValidator;
+
+        /// <summary>
+        /// CPasswordCompareValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator CPasswordCompareValidator;
+
+        /// <summary>
         /// SignUpButton control.
         /// </summary>
         /// <remarks>
@@ -123,12 +231,30 @@ namespace EcommerceGemShae
         protected global::System.Web.UI.WebControls.Button SignUpButton;
 
         /// <summary>
-        /// Label1 control.
+        /// ValidationSummary1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary1;
+
+        /// <summary>
+        /// SqlDataSource1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+
+        /// <summary>
+        /// StatusLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label StatusLabel;
     }
 }

@@ -1,4 +1,26 @@
 ﻿<%@ Page Title="Admin Product Inventory" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AdminProductInventory.aspx.cs" Inherits="EcommerceGemShae.AdminProductInventory" %>
+
+<asp:Content ID="ContentHead" ContentPlaceHolderID="head" runat="server">
+    <script type="text/javascript">
+       $(document).ready(function () {
+           $(".table").prepend($("<thead></thead>").append($(this).find("tr:first"))).dataTable();
+       });
+
+       function readURL(input) {
+           if (input.files && input.files[0]) {
+               var reader = new FileReader();
+
+               reader.onload = function (e) {
+                   $('#product-img').attr('src', e.target.result);
+               };
+
+               reader.readAsDataURL(input.files[0]);
+           }
+       }
+
+    </script>
+</asp:Content>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="container-fluid">
@@ -22,7 +44,7 @@
                         <%--IMAGE ROW--%>
                         <div class="row">
                             <div class="col">
-                                <center> <img width="300" alt="User Icon" src="images/GEM logo (wide).png" /> </center>
+                                <center> <img id="product-img" width="350" alt="User Icon" src="images/GEM logo (wide).png" /> </center>
                             </div>
                         </div>
 
@@ -36,7 +58,7 @@
                         <%--COL 12 - FILE IMAGE UPLOAD--%>
                         <div class="row">
                             <div class="col-md-12">
-                                <asp:FileUpload ID="ImageFileUpload" runat="server" class="form-control"/>
+                                <asp:FileUpload ID="ImageFileUpload" runat="server" class="form-control" onchange="readURL(this);"/>
                             </div>
                         </div>
 
@@ -49,7 +71,7 @@
                                 <div class="form-group">
                                     <div class="input-group">
                                         <asp:TextBox ID="ProductIDTextBox" runat="server" CssClass="form-control" placeholder="Product ID"></asp:TextBox>
-                                        <asp:LinkButton ID="GoSearchLinkButton" runat="server" Text="Go" class="btn btn-primary"></asp:LinkButton>
+                                        <asp:LinkButton ID="GoSearchLinkButton" runat="server" Text="Go" class="btn btn-primary" OnClick="GoSearchLinkButton_Click"></asp:LinkButton>
                                     </div>
                                 </div>
                             </div>
@@ -124,13 +146,13 @@
                         <%--COL 12 - BUTTONS--%>
                         <div class="row">
                             <div class="col-md-4"> 
-                                <asp:Button ID="AddButton" runat="server" Text="Add" class="btn btn-success btn-block btn-lg" />
+                                <asp:Button ID="AddButton" runat="server" Text="Add" class="btn btn-success btn-block btn-lg" OnClick="AddButton_Click" />
                             </div>
                             <div class="col-md-4"> 
-                                <asp:Button ID="UpdateButton" runat="server" Text="Update" class="btn btn-warning btn-block btn-lg" />
+                                <asp:Button ID="UpdateButton" runat="server" Text="Update" class="btn btn-warning btn-block btn-lg" OnClick="UpdateButton_Click" />
                             </div>
                             <div class="col-md-4"> 
-                                <asp:Button ID="DeleteButton" runat="server" Text="Delete" class="btn btn-danger btn-block btn-lg" />
+                                <asp:Button ID="DeleteButton" runat="server" Text="Delete" class="btn btn-danger btn-block btn-lg" OnClick="DeleteButton_Click" />
                             </div>
                         </div>
 
@@ -162,8 +184,20 @@
                         </div>
 
                         <div class="row">
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ProductTableConnectionString %>" SelectCommand="SELECT * FROM [product_master]"></asp:SqlDataSource>
                             <div class="col">
-                                <asp:GridView ID="ProductListGridView" runat="server" class="table table-striped table-bordered"></asp:GridView>
+                                <asp:GridView ID="ProductListGridView" runat="server" class="table table-bordered thead-dark table-hover table-responsive-md" AutoGenerateColumns="False" DataKeyNames="product_id" DataSourceID="SqlDataSource1">
+                                    <Columns>
+                                        <asp:BoundField DataField="product_id" HeaderText="Product ID" ReadOnly="True" SortExpression="product_id" />
+                                        <asp:BoundField DataField="product_name" HeaderText="Name" SortExpression="product_name" />
+                                        <asp:BoundField DataField="category" HeaderText="Category" SortExpression="category" />
+                                        <asp:BoundField DataField="product_cost" HeaderText="Cost" SortExpression="product_cost" />
+                                        <asp:BoundField DataField="product_description" HeaderText="Description" SortExpression="product_description" />
+                                        <asp:BoundField DataField="actual_stock" HeaderText="actual_stock" SortExpression="actual_stock" />
+                                        <asp:BoundField DataField="current_stock" HeaderText="current_stock" SortExpression="current_stock" />
+                                        <asp:BoundField DataField="product_img_link" HeaderText="product_img_link" SortExpression="product_img_link" />
+                                    </Columns>
+                                </asp:GridView>
                             </div>
                         </div>
 

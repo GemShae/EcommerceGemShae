@@ -15,22 +15,22 @@ namespace EcommerceGemShae
     {
 
         /// <summary>
-        /// MemberIDTextBox control.
+        /// UserIDTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox MemberIDTextBox;
+        protected global::System.Web.UI.WebControls.TextBox UserIDTextBox;
 
         /// <summary>
-        /// MemberPasswordTextBox control.
+        /// UserPasswordTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox MemberPasswordTextBox;
+        protected global::System.Web.UI.WebControls.TextBox UserPasswordTextBox;
 
         /// <summary>
         /// LoginButton control.
@@ -40,5 +40,14 @@ namespace EcommerceGemShae
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button LoginButton;
+
+        /// <summary>
+        /// SqlDataSource1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
     }
 }
