@@ -17,7 +17,6 @@
                reader.readAsDataURL(input.files[0]);
            }
        }
-
     </script>
 </asp:Content>
 
@@ -188,14 +187,56 @@
                             <div class="col">
                                 <asp:GridView ID="ProductListGridView" runat="server" class="table table-bordered thead-dark table-hover table-responsive-md" AutoGenerateColumns="False" DataKeyNames="product_id" DataSourceID="SqlDataSource1">
                                     <Columns>
-                                        <asp:BoundField DataField="product_id" HeaderText="Product ID" ReadOnly="True" SortExpression="product_id" />
-                                        <asp:BoundField DataField="product_name" HeaderText="Name" SortExpression="product_name" />
-                                        <asp:BoundField DataField="category" HeaderText="Category" SortExpression="category" />
-                                        <asp:BoundField DataField="product_cost" HeaderText="Cost" SortExpression="product_cost" />
-                                        <asp:BoundField DataField="product_description" HeaderText="Description" SortExpression="product_description" />
-                                        <asp:BoundField DataField="actual_stock" HeaderText="actual_stock" SortExpression="actual_stock" />
-                                        <asp:BoundField DataField="current_stock" HeaderText="current_stock" SortExpression="current_stock" />
-                                        <asp:BoundField DataField="product_img_link" HeaderText="product_img_link" SortExpression="product_img_link" />
+                                        <asp:BoundField DataField="product_id" HeaderText="ID" ReadOnly="True" SortExpression="product_id" >
+                                        
+                                        <ControlStyle Font-Bold="True" />
+                                        <ItemStyle Font-Bold="True" />
+                                        </asp:BoundField>
+                                        
+                                        <asp:TemplateField>
+                                            <ItemTemplate>
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="col-lg-9">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <asp:Label ID="ProductNameLabel" runat="server" Text='<%# Eval("product_name") %>' Font-Bold="True" Font-Size="X-Large"></asp:Label>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    Category - <asp:Label ID="ProductCategoryLabel" runat="server" Text='<%# Eval("category") %>' Font-Bold="True"></asp:Label>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    Cost - $<asp:Label ID="ProductCostLabel" runat="server" Text='<%# Eval("product_cost") %>' Font-Bold="True"></asp:Label>
+                                                                    &nbsp;| Actual Stock -
+                                                                    <asp:Label ID="ActualStockLabel" runat="server" Font-Bold="True" Text='<%# Eval("actual_stock") %>'></asp:Label>
+                                                                    &nbsp;| Available Stock -
+                                                                    <asp:Label ID="CurrentStockLabel" runat="server" Font-Bold="True" Text='<%# Eval("current_stock") %>'></asp:Label>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    Description -
+                                                                    <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Italic="True" Font-Size="Smaller" Text='<%# Eval("product_description") %>'></asp:Label>
+
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <asp:Image class="img-fluid image-size product-image" ID="Image1" runat="server" ImageUrl='<%# Eval("product_img_link") %>' />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </ItemTemplate>
+                                        </asp:TemplateField>
+                                        
                                     </Columns>
                                 </asp:GridView>
                             </div>

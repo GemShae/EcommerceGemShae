@@ -174,7 +174,7 @@
                         <div class="row">
                             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:UserTableConnectionString %>" SelectCommand="SELECT * FROM [user_master]"></asp:SqlDataSource>
                             <div class="col">
-                                <asp:GridView ID="UserListGridView" runat="server" class="table table-bordered thead-dark table-hover table-responsive-md" AutoGenerateColumns="False" DataKeyNames="user_id" DataSourceID="SqlDataSource1">
+                                <asp:GridView ID="UserListGridView" runat="server" class="table table-bordered thead-dark table-hover table-responsive-md" AutoGenerateColumns="False" DataKeyNames="user_id" DataSourceID="SqlDataSource1" AllowSorting="True">
                                     <Columns>
                                         <asp:BoundField DataField="user_id" HeaderText="User ID" ReadOnly="True" SortExpression="user_id" />
                                         <asp:BoundField DataField="full_name" HeaderText="Full Name" SortExpression="full_name" />
