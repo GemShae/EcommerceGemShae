@@ -145,8 +145,8 @@ ol li {
 /* END USER LOGIN PAGE */
 
 /* START CART PAGE */
-.cart-header h2{
+.cart-header h2 {
     text-decoration: underline overline blink;
-
+    color: #E1B12C;
 }
 /* END CART PAGE */

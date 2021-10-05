@@ -32,14 +32,54 @@
             </div>
 
             <div class="row home-subscribe">
-                <div class="col-12 text-right">
-                    <asp:TextBox ID="SearchTextBox" runat="server" Height="28px" Width="180px" Font-Bold="True" ForeColor="#E1B12C"></asp:TextBox>
-                    <asp:ImageButton ID="SearchImageButton" runat="server" Height="25px" ImageUrl="~/images/magnifying-glass.png" Width="25px" OnClick="SearchImageButton_Click" />
+                <div class="col-12 text-center">
+                    <asp:HyperLink ID="ContinueShopHyperLink" runat="server" Font-Bold="True" Font-Names="Colonna MT" Font-Size="X-Large">Continue Shopping</asp:HyperLink>
                 </div>
             </div>
             <br />
             <div class="row">
-                
+                <div class="col-12 card-border product-polaroid text-center">
+                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" EmptyDataText="No Products in Shopping Cart" Font-Bold="True" ShowFooter="True">
+                        <Columns>
+                            <asp:BoundField DataField="Num" HeaderText="#">
+                            <HeaderStyle HorizontalAlign="Center" />
+                            <ItemStyle HorizontalAlign="Center" />
+                            </asp:BoundField>
+                            <asp:BoundField DataField="PID" HeaderText="Product ID">
+                            <HeaderStyle HorizontalAlign="Center" />
+                            <ItemStyle HorizontalAlign="Center" />
+                            </asp:BoundField>
+                            <asp:ImageField DataImageUrlField="PImage" HeaderText="Product Image">
+                                <ControlStyle Width="350px" />
+                                <HeaderStyle HorizontalAlign="Center" />
+                                <ItemStyle HorizontalAlign="Center" />
+                            </asp:ImageField>
+                            <asp:BoundField DataField="PName" HeaderText="Product Name">
+                            <HeaderStyle HorizontalAlign="Center" />
+                            <ItemStyle HorizontalAlign="Center" />
+                            </asp:BoundField>
+                            <asp:BoundField DataField="PPrice" HeaderText="Price">
+                            <HeaderStyle HorizontalAlign="Center" />
+                            <ItemStyle HorizontalAlign="Center" />
+                            </asp:BoundField>
+                            <asp:BoundField DataField="PQuantity" HeaderText="Quantity">
+                            <HeaderStyle HorizontalAlign="Center" />
+                            <ItemStyle HorizontalAlign="Center" />
+                            </asp:BoundField>
+                            <asp:BoundField DataField="PSTotal" HeaderText="Sub Total">
+                            <HeaderStyle HorizontalAlign="Center" />
+                            <ItemStyle HorizontalAlign="Center" />
+                            </asp:BoundField>
+                            <asp:CommandField DeleteText="Remove" ShowDeleteButton="True" />
+                        </Columns>
+                        <FooterStyle BackColor="#0097E6" Font-Bold="True" ForeColor="White" />
+                        <HeaderStyle BackColor="#30336B" ForeColor="#E1B12C" HorizontalAlign="Center" />
+                    </asp:GridView>
+
+                    <br />
+
+                    <asp:Button ID="Button1" runat="server" Text="Button" BackColor="#FC427B" Font-Bold="True" Font-Size="Large" ForeColor="White" Height="45px" Width="135px" />
+                </div>
             </div>
         </div>
     </section>
