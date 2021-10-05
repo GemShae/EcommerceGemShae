@@ -66,12 +66,20 @@ namespace EcommerceGemShae
                             dataRow["PPrice"] = dataSet.Tables[0].Rows[0]["product_cost"].ToString();
                             dataRow["PQuantity"] = Request.QueryString["quantity"];
 
-                            int price = Convert.ToInt32(dataSet.Tables[0].Rows[0]["PPrice"].ToString());
-                            int quantity = Convert.ToInt16(Request.QueryString["quantity"].ToString());
+                            //Response.Write("<script>alert('"+dataRow["PName"].ToString()+"');</script>");
+
+                            //int price = Convert.ToInt32(dataSet.Tables[0].Rows[0]["PPrice"].ToString());
+                            int price = Convert.ToInt32(dataRow["PPrice"].ToString());
+                            int quantity = Convert.ToInt32(Request.QueryString["quantity"].ToString());
                             int subtotalPrice = price * quantity;
                             dataRow["PSTotal"] = subtotalPrice;
 
+                            //Response.Write("<script>alert('"+ dataRow["PSTotal"].ToString() + "');</script>");
+
                             dataTable.Rows.Add(dataRow);
+
+                            //Response.Write("<script>alert('Add data Row');</script>");
+
                             CartGridView.DataSource = dataTable;
                             CartGridView.DataBind();
                             Session["buyitems"] = dataTable;
@@ -115,7 +123,7 @@ namespace EcommerceGemShae
                             dataRow["PPrice"] = dataSet.Tables[0].Rows[0]["product_cost"].ToString();
                             dataRow["PQuantity"] = Request.QueryString["quantity"];
 
-                            int price = Convert.ToInt32(dataSet.Tables[0].Rows[0]["PPrice"].ToString());
+                            int price = Convert.ToInt32(dataRow["PPrice"].ToString());
                             int quantity = Convert.ToInt16(Request.QueryString["quantity"].ToString());
                             int subtotalPrice = price * quantity;
                             dataRow["PSTotal"] = subtotalPrice;
@@ -171,7 +179,7 @@ namespace EcommerceGemShae
 
             while (i < numOfRows)
             {
-                totalCost = totalCost + Convert.ToInt32(dataTable.Rows[i]["PPrice"].ToString());
+                totalCost = totalCost + Convert.ToInt32(dataTable.Rows[i]["PSTotal"].ToString());
                 i++;
             }
 
@@ -235,6 +243,66 @@ namespace EcommerceGemShae
 
             Session["buyitems"] = dataTable;
             Response.Redirect("ShoppingCart.aspx");
+        }
+
+        protected void BuyItemsButton_Click(object sender, EventArgs e)
+        {
+            DataTable dataTable;
+            dataTable = (DataTable)Session["buyitems"];
+
+            for (int i=0; i<=dataTable.Rows.Count-1; i++)
+            {
+                try
+                {
+                    SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["OrderTableConnectionString"].ConnectionString);
+
+                    if (conn.State == ConnectionState.Closed)
+                    {
+                        conn.Open();
+                    }
+
+                    string insertOrder = "insert into orderdetails_master(order_id,item_num,username,product_id,quantity,subtotal,date_time) " +
+                        "values (@orderid,@itemnum,@username,@productid,@quantity,@subtotal,@datetime)";
+
+                    SqlCommand cmd = new SqlCommand(insertOrder, conn);
+
+                    cmd.Parameters.AddWithValue("@orderid", Session["orderid"]);
+                    cmd.Parameters.AddWithValue("@itemnum", dataTable.Rows[i]["Num"]);
+                    cmd.Parameters.AddWithValue("@username", Session["username"]);
+                    cmd.Parameters.AddWithValue("@productid", dataTable.Rows[i]["PID"]);
+                    cmd.Parameters.AddWithValue("@quantity", dataTable.Rows[i]["PQuantity"]);
+                    cmd.Parameters.AddWithValue("@subtotal", dataTable.Rows[i]["PSTotal"]);
+                    cmd.Parameters.AddWithValue("@datetime", DateTime.Now.ToString());
+
+                    cmd.ExecuteNonQuery();
+
+                    conn.Close();
+
+                    Response.Write("<script>alert('Order Placed Successfully');</script>");
+
+                }
+                catch (Exception ex)
+                {
+                    Response.Write("<script>alert('" + ex.Message + "');</script>");
+                }
+            }
+
+            if (Session["role"] == null)
+            {
+                Response.Redirect("UserLogin.aspx");
+            }
+            else
+            {
+                if (CartGridView.Rows.Count.ToString() == "0")
+                {
+                    Response.Write("<script>alert('Cart is Empty. Cannot place order');</script>");
+                }
+                else
+                {
+                    Response.Redirect("PlaceOrder.aspx");
+                }
+            }
+
         }
     }
 }
