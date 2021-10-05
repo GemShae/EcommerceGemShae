@@ -101,6 +101,9 @@
                                 <li >
                                     <asp:LinkButton ID="HelloUserLinkButton" runat="server" ForeColor="#E1B12C" Visible="False">Hello User</asp:LinkButton>
                                 </li>
+                                <li >
+                                    <asp:LinkButton ID="CartLinkButton" runat="server" Text="SC" ForeColor="#E1B12C" class="btn"><i class="fas fa-shopping-cart"></i></asp:LinkButton>
+                                </li>
                             </ul>
                         </div>
                     </div> 

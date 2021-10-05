@@ -24,6 +24,33 @@ namespace EcommerceGemShae
         protected global::System.Web.UI.WebControls.Button HomeToProducts;
 
         /// <summary>
+        /// LoginAsLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LoginAsLabel;
+
+        /// <summary>
+        /// LoginHyperLink control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink LoginHyperLink;
+
+        /// <summary>
+        /// LogoutButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button LogoutButton;
+
+        /// <summary>
         /// HomeToAbout control.
         /// </summary>
         /// <remarks>

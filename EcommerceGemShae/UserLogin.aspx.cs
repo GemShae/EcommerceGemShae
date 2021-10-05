@@ -36,8 +36,11 @@ namespace EcommerceGemShae
 
                 if (dataReader.HasRows)
                 {
+                    StatusLabel.Text = "Login Successful";
+                    StatusLabel.ForeColor = System.Drawing.Color.Green;
+                    
                     while (dataReader.Read())
-                    {
+                    { 
                         Response.Write("<script>alert('Login Successful');</script>");
                         Session["username"] = dataReader.GetValue(0).ToString();
                         Session["fullname"] = dataReader.GetValue(1).ToString();
@@ -48,6 +51,8 @@ namespace EcommerceGemShae
                 }
                 else
                 {
+                    StatusLabel.Text = "Login Unsuccessful";
+                    StatusLabel.ForeColor = System.Drawing.Color.Red;
                     Response.Write("<script>alert('Invalid User Credentials');</script>");
                 }
 

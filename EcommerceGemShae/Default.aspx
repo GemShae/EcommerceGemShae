@@ -13,13 +13,16 @@
                     <h5>We specialize in Photography, Videography, Audio, Motivational Speaking and Entertainment.</h5>
                     <h4>Always remember that there's a GEM in everyone!</h4> <br />
                     
-                    <asp:Button ID="HomeToProducts" runat="server" Text="View Products" BorderStyle="Groove" OnClick="HomeToProducts_Click" ForeColor="#0000CC" />
+                    <asp:Button ID="HomeToProducts" runat="server" Text="View Products" BorderStyle="Groove" OnClick="HomeToProducts_Click" ForeColor="#0000CC" /> <br /> <br />
 
+                    <asp:Label ID="LoginAsLabel" runat="server" style="text-align:left" Font-Bold="True" Font-Italic="True" Font-Names="Bahnschrift SemiBold" ForeColor="White" Font-Size="Medium"></asp:Label>
+                    <asp:HyperLink ID="LoginHyperLink" runat="server" Font-Bold="True" Font-Names="Arial Rounded MT Bold" NavigateUrl="~/UserLogin.aspx" BorderStyle="Groove" Font-Size="Medium" ForeColor="White">Click To Login</asp:HyperLink>
+                    <asp:Button ID="LogoutButton" runat="server" Text="Log Out" BorderStyle="Groove" Font-Bold="True" Font-Names="Comic Sans MS" ForeColor="#0000CC" Height="27px" Width="105px" Visible="False" OnClick="LogoutButton_Click" />
                 </div>
                 
                 <div class="col-md-6">
                     <br />
-                    <img class="rounded img-fluid mx-auto d-block default-image image-size" alt="Drone in Air" src="images/DroneInAir.JPG" width:"400px" />
+                    <img class="rounded img-fluid default-image image-size" alt="Drone in Air" src="images/DroneInAir.JPG" width:"400px" />
                 </div>
             </div>
         </div>

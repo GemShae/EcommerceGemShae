@@ -145,7 +145,7 @@
                         <%--COL 12 - BUTTONS--%>
                         <div class="row">
                             <div class="col-md-4"> 
-                                <asp:Button ID="AddButton" runat="server" Text="Add" class="btn btn-success btn-block btn-lg" OnClick="AddButton_Click" />
+                                <asp:Button ID="AddButton" runat="server" Text="Add" class="btn btn-success btn-block btn-lg" OnClick="AddButton_Click" Font-Bold="True" />
                             </div>
                             <div class="col-md-4"> 
                                 <asp:Button ID="UpdateButton" runat="server" Text="Update" class="btn btn-warning btn-block btn-lg" OnClick="UpdateButton_Click" />
@@ -158,6 +158,8 @@
                     </div>
                 </div>
                 <br />
+                <asp:Label ID="StatusLabel" runat="server" Text="" style="color:#E1B12C" Font-Bold="True" Font-Italic="True"></asp:Label> <br /><br />
+
                 <a href="Default.aspx"> <b> << Back to Home </b> </a> 
                 <br /> <br />
             </div>

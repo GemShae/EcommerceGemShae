@@ -1847,14 +1847,17 @@
     <Content Include="images\DroneOnStand.JPG" />
     <Content Include="images\high-quality.png" />
     <Content Include="images\Igal.JPG" />
+    <Content Include="images\magnifying-glass.png" />
     <Content Include="images\Numark Party Mix II - DJ Controller with Party Lights.jpg" />
     <Content Include="images\Official PAV Logo.png" />
     <Content Include="images\Pinknd Blue.jpg" />
     <Content Include="images\Jaida.JPG" />
     <Content Include="images\Shanya.JPG" />
     <Content Include="images\press-conference.png" />
+    <Content Include="images\shopping-basket.png" />
     <Content Include="images\UBeesize Camera Tripod.jpg" />
     <Content Include="images\user.png" />
+    <Content Include="ProductsOld.aspx" />
     <Content Include="Products.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -1884,6 +1887,7 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="ShoppingCart.aspx" />
     <Content Include="Site.Master" />
     <Content Include="StyleSheetMaster.css" />
     <Content Include="UserLogin.aspx" />
@@ -1942,6 +1946,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="ProductsOld.aspx.cs">
+      <DependentUpon>ProductsOld.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductsOld.aspx.designer.cs">
+      <DependentUpon>ProductsOld.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Products.aspx.cs">
       <DependentUpon>Products.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1950,6 +1961,13 @@
       <DependentUpon>Products.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShoppingCart.aspx.cs">
+      <DependentUpon>ShoppingCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShoppingCart.aspx.designer.cs">
+      <DependentUpon>ShoppingCart.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

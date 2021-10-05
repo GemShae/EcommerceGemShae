@@ -63,6 +63,8 @@
                     </div>
                 </div>
 
+                <asp:Label ID="StatusLabel" runat="server" Text="" style="color:#E1B12C" Font-Bold="True" Font-Italic="True"></asp:Label>
+
                 <a href="Default.aspx"> << <b> Back to Home </b></a> 
                 <br /> <br />
             </div>

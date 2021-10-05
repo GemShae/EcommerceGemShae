@@ -143,3 +143,10 @@ ol li {
         color: #E1B12C;
     }
 /* END USER LOGIN PAGE */
+
+/* START CART PAGE */
+.cart-header h2{
+    text-decoration: underline overline blink;
+
+}
+/* END CART PAGE */
