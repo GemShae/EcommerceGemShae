@@ -39,7 +39,7 @@
             <br />
             <div class="row">
                 <div class="col-12 card-border product-polaroid text-center">
-                    <asp:GridView ID="CartGridView" runat="server" AutoGenerateColumns="False" EmptyDataText="No Products in Shopping Cart" Font-Bold="True" ShowFooter="True">
+                    <asp:GridView ID="CartGridView" runat="server" AutoGenerateColumns="False" EmptyDataText="No Products in Shopping Cart" Font-Bold="True" ShowFooter="True" OnRowDeleting="CartGridView_RowDeleting">
                         <Columns>
                             <asp:BoundField DataField="Num" HeaderText="#">
                             <HeaderStyle HorizontalAlign="Center" />

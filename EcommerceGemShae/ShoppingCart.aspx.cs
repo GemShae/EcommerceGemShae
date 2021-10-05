@@ -197,5 +197,44 @@ namespace EcommerceGemShae
 
             Session["orderid"] = orderId;
         }
+
+        //Deleting Row from Cart
+        protected void CartGridView_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            DataTable dataTable = new DataTable();
+            dataTable = (DataTable)Session["buyitems"];
+
+            for (int i=0; i<=dataTable.Rows.Count-1; i++)
+            {
+                int numofItems;
+                int numofItems2;
+                string qdata;
+                string dataTableData;
+
+                numofItems = Convert.ToInt32(dataTable.Rows[i]["Num"].ToString());
+                TableCell tableCell = CartGridView.Rows[e.RowIndex].Cells[0];
+                qdata = tableCell.Text;
+                dataTableData = numofItems.ToString();
+                numofItems2 = Convert.ToInt32(qdata);
+
+                if (numofItems == numofItems2)
+                {
+                    dataTable.Rows[i].Delete();
+                    dataTable.AcceptChanges();
+                    //Item has been deleted from cart
+                    break;
+                }
+            }
+
+            //Setting Number of Items after deleting a row from cart
+            for (int i=1; i<=dataTable.Rows.Count; i++)
+            {
+                dataTable.Rows[i - 1]["Num"] = i;
+                dataTable.AcceptChanges();
+            }
+
+            Session["buyitems"] = dataTable;
+            Response.Redirect("ShoppingCart.aspx");
+        }
     }
 }
