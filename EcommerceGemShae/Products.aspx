@@ -58,7 +58,7 @@
                 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ProductTableConnectionString %>" SelectCommand="SELECT [product_id], [product_name], [category], [product_cost], [product_description], [product_img_link] FROM [product_master]"></asp:SqlDataSource>
 
                 <div class="col">
-                    <asp:DataList ID="ProductDataList" runat="server" DataKeyField="product_id" DataSourceID="SqlDataSource1" Width="900px" RepeatColumns="3" RepeatDirection="Horizontal" CellPadding="5" CellSpacing="10">
+                    <asp:DataList ID="ProductDataList" runat="server" DataKeyField="product_id" DataSourceID="SqlDataSource1" Width="900px" RepeatColumns="3" RepeatDirection="Horizontal" CellPadding="5" CellSpacing="10" OnItemCommand="ProductDataList_ItemCommand">
                         
                         <ItemTemplate>
                             <div class="container-fluid">

@@ -24,21 +24,21 @@ namespace EcommerceGemShae
         protected global::System.Web.UI.WebControls.HyperLink ContinueShopHyperLink;
 
         /// <summary>
-        /// GridView1 control.
+        /// CartGridView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.GridView CartGridView;
 
         /// <summary>
-        /// Button1 control.
+        /// BuyItemsButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button BuyItemsButton;
     }
 }
