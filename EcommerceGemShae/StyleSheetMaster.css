@@ -59,8 +59,7 @@ ul li a {
     color: white;
 }
 .qualities-img {
-    width: 150px;
-    height: 143px;
+    width: 200px;
 }
 .rounded-hr {
     border-top: 8px solid #bbb;
@@ -73,13 +72,11 @@ ul li a {
     border-radius: 5px;
 }
 .home-subscribe .form-control{
-    height: 35px;
+    height: 50px;
     border-radius: 20px 0 0 20px;
-    top: 0px;
-    left: 0px;
 }
 .home-subscribe .btn {
-    min-height: 35px;
+    min-height: 50px;
     border-radius: 0 20px 20px 0;
     background: #FC427B;
     color: #fff;
@@ -138,6 +135,7 @@ ol li {
 .card-border {
     border-style: solid;
     border-color: #1289A7;
+    border-width:thick;
 }
     .card-border a {
         color: #E1B12C;

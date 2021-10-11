@@ -21,13 +21,13 @@
 </asp:Content>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-
+    <br /> <br />
     <div class="container-fluid">
         <div class="row">
             <br /> <br />
-            <div class="col-md-5 card-border product-polaroid">
+            <div class="col-md-5">
 
-                <div class="card">
+                <div class="card card-border product-polaroid">
                     <div class="card-body">
 
                         <%--TITLE ROW--%>
@@ -155,18 +155,19 @@
                             </div>
                         </div>
 
+                        <asp:Label ID="StatusLabel" runat="server" Text="" style="color:#E1B12C" Font-Bold="True" Font-Italic="True"></asp:Label> <br /><br />
+
+                        <a href="Default.aspx"> <b> << Back to Home </b> </a> 
+                        <br /> <br />
+
                     </div>
                 </div>
-                <br />
-                <asp:Label ID="StatusLabel" runat="server" Text="" style="color:#E1B12C" Font-Bold="True" Font-Italic="True"></asp:Label> <br /><br />
 
-                <a href="Default.aspx"> <b> << Back to Home </b> </a> 
-                <br /> <br />
             </div>
 
-            <div class="col-md-7 card-border product-polaroid">
+            <div class="col-md-7 ">
 
-                <div class="card">
+                <div class="card card-border product-polaroid">
                     <div class="card-body">
 
                         <div class="row">

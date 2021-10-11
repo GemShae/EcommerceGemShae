@@ -105,5 +105,15 @@ namespace EcommerceGemShae
             ProductInventoryLinkButton.Visible = false;
             ManageUsersLinkButton.Visible = false;
         }
+
+        protected void CartImageButton_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("ShoppingCart.aspx");
+        }
+
+        protected void HelloUserLinkButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("UserProfile.aspx");
+        }
     }
 }

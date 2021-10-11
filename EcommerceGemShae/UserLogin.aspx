@@ -1,13 +1,13 @@
 ﻿<%@ Page Title="User Login" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="UserLogin.aspx.cs" Inherits="EcommerceGemShae.UserLogin" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-   
+    <br /> <br />
     <div class="container">
-        <div class="row">
+        <div class="row pt-3">
             <br /> <br />
-            <div class="col-md-6 mx-auto center card-border product-polaroid">
+            <div class="col-md-6 mx-auto">
 
-                <div class="card">
+                <div class="card product-polaroid card-border">
                     <div class="card-body">
 
                         <%--IMAGE ROW--%>
@@ -36,7 +36,7 @@
 
                         <%--COL 12 - FULL DETAILS ROW--%>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col">
                                 <label>User ID</label>
                                 <div class="form-group">
                                     <asp:TextBox ID="UserIDTextBox" runat="server" CssClass="form-control" placeholder="User ID"></asp:TextBox>
@@ -60,13 +60,13 @@
                                 </div>
                             </div>
                         </div>
+
+                        <asp:Label ID="StatusLabel" runat="server" Text="" style="color:#E1B12C" Font-Bold="True" Font-Italic="True"></asp:Label> <br />
+
+                        <a href="Default.aspx"> << <b> Back to Home </b></a>
+
                     </div>
                 </div>
-
-                <asp:Label ID="StatusLabel" runat="server" Text="" style="color:#E1B12C" Font-Bold="True" Font-Italic="True"></asp:Label>
-
-                <a href="Default.aspx"> << <b> Back to Home </b></a> 
-                <br /> <br />
             </div>
         </div>
     </div>

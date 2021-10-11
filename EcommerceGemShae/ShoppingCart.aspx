@@ -26,14 +26,14 @@
     <section class="products-section">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 text-center cart-header">
+                <div class="col-12 text-center cart-header pt-3">
                     <h2> You Have the Following Products in Your Cart. </h2>
                 </div>
             </div>
 
             <div class="row home-subscribe">
                 <div class="col-12 text-center">
-                    <asp:HyperLink ID="ContinueShopHyperLink" runat="server" Font-Bold="True" Font-Names="Berlin Sans FB" Font-Size="X-Large" NavigateUrl="~/Products.aspx" ForeColor="White">Continue Shopping</asp:HyperLink>
+                    <asp:HyperLink ID="ContinueShopHyperLink" runat="server" Font-Bold="True" Font-Size="X-Large" NavigateUrl="~/Products.aspx" ForeColor="White">Continue Shopping</asp:HyperLink>
                 </div>
             </div>
             <br />

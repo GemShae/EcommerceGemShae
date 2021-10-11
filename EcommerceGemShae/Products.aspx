@@ -5,18 +5,19 @@
 
         <%--START PRODUCTS PAGE FIRST SECTION - BREADCRUMPS--%>
     <section class="breadcrumbs-section">
-        <div class="container pl-3 pr-3 p-sm-3">
+        <div class="container pt-2">
             <div class="row">
-                <div class="col-md-9 pl-2">
+                <div class="col-md-10 pl-3">
+                    <br /> <br />
                     <h2> <%: Title %> </h2>
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"> <a href="Default.aspx">Home</a> </li>
                         <li class="breadcrumb-item active">Products</li>
                     </ol>
                 </div>
-                <div class="col-md-3 text-center">
+                <div class="col-md-2 text-center pt-3">
                     <br /> <br />
-                    <img class="img-fluid image-size" alt="Gem Logo" src="images/GEM logo.png" width="120" />
+                    <img class="img-fluid image-size" alt="Gem Logo" src="images/GEM logo.png" width="80" />
                 </div>
             </div>
         </div>

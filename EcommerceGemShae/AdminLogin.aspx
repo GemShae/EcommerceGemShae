@@ -1,13 +1,15 @@
 ﻿<%@ Page Title="Admin Login" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AdminLogin.aspx.cs" Inherits="EcommerceGemShae.AdminLogin" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-
+    <br /> <br />
     <div class="container">
-        <div class="row">
+        <div class="row pt-3">
             <br /> <br />
-            <div class="col-md-6 mx-auto center card-border product-polaroid">
-                <div class="card">
+            <div class="col-md-6 mx-auto">
+
+                <div class="card product-polaroid card-border">
                     <div class="card-body">
+
                         <div class="row">
                             <br /> <br />
                             <div class="col">

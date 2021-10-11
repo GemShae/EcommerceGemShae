@@ -5,18 +5,19 @@
     
     <%--START ABOUT PAGE FIRST SECTION - BREADCRUMPS--%>
     <section class="breadcrumbs-section">
-        <div class="container p-1 p-sm-3">
+        <div class="container pt-2">
             <div class="row">
-                <div class="col-md-9 pl-2">
+                <div class="col-md-10 pl-3">
+                    <br /> <br />
                     <h2> <%: Title %> Us</h2>
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"> <a href="Default.aspx">Home</a> </li>
                         <li class="breadcrumb-item active">About Us</li>
                     </ol>
                 </div>
-                <div class="col-md-3 text-center">
+                <div class="col-md-2 text-center pt-3">
                     <br /> <br />
-                    <img class="img-fluid image-size" alt="Gem Logo" src="images/GEM logo.png" width="120" />
+                    <img class="img-fluid image-size" alt="Gem Logo" src="images/GEM logo.png" width="80" />
                 </div>
             </div>
         </div>
@@ -59,9 +60,9 @@
     <hr class="rounded-hr" />
 
     <%--START ABOUT PAGE 3RD SECTION - EMPLOYEES--%>
-    <section class="pt-3 pb-4">
+    <section>
         <div class="container">
-            <div class="row mt-4">
+            <div class="row">
                 <div class="col-12 text-center">
                     <h3> Our Awesome Team </h3>
                 </div>
@@ -69,22 +70,22 @@
             </div>
 
             <div class="row">
-                <div class="col-md-4 text-center p-4">
-                    <img class="img-fluid p-5 qualities-img" alt="Ceo" src="images/Shanya.JPG" width="200" />
+                <div class="col-md-4 text-center p-3">
+                    <img class="img-fluid p-3 qualities-img" alt="Ceo" src="images/Shanya.JPG" width="200" />
                     <h4> Ceo </h4>
                     <p>  
                         <i>Shanya Connell</i>
                     </p>
                 </div>
-                <div class="col-md-4 text-center p-4">
-                    <img class="img-fluid p-5 qualities-img" alt="Photographer" src="images/Jaida.JPG" width="200" />
+                <div class="col-md-4 text-center p-3">
+                    <img class="img-fluid p-3 qualities-img" alt="Photographer" src="images/Jaida.JPG" width="200" />
                     <h4> Photography Manager </h4>
                     <p>  
                         <i>Jaida Walker</i>
                     </p>
                 </div>
-                <div class="col-md-4 text-center p-4">
-                    <img class="img-fluid p-5 qualities-img" alt="Dancer" src="images/Igal.JPG" width="200" height="30"/>
+                <div class="col-md-4 text-center p-3">
+                    <img class="img-fluid p-3 qualities-img" alt="Dancer" src="images/Igal.JPG" width="200"/>
                     <h4> Entertainment Manager </h4>
                     <p>  
                         <i>Igal Scott</i>

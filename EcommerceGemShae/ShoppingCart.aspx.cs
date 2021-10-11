@@ -199,9 +199,7 @@ namespace EcommerceGemShae
             }
 
             string orderId;
-            orderId = "Order_Id: " + DateTime.Now.Hour.ToString() + DateTime.Now.Second.ToString() + DateTime.Now.Day.ToString() +
-                DateTime.Now.Month.ToString() + DateTime.Now.Year.ToString() + new string(charArray) + DateTime.Now.Minute.ToString() +
-                DateTime.Now.Second.ToString();
+            orderId = new string(charArray); 
 
             Session["orderid"] = orderId;
         }
@@ -287,21 +285,15 @@ namespace EcommerceGemShae
                 }
             }
 
-            if (Session["role"] == null)
-            {
-                Response.Redirect("UserLogin.aspx");
-            }
-            else
-            {
                 if (CartGridView.Rows.Count.ToString() == "0")
                 {
                     Response.Write("<script>alert('Cart is Empty. Cannot place order');</script>");
                 }
                 else
                 {
-                    Response.Redirect("PlaceOrder.aspx");
+                    Response.Redirect("OrderPayment.aspx");
                 }
-            }
+            
 
         }
     }

@@ -1,13 +1,21 @@
 ﻿<%@ Page Title="User Profile" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="UserProfile.aspx.cs" Inherits="EcommerceGemShae.UserProfile" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Content ID="ContentHead" ContentPlaceHolderID="head" runat="server">
+    <script type="text/javascript">
+       $(document).ready(function () {
+           $(".table").prepend($("<thead></thead>").append($(this).find("tr:first"))).dataTable();
+       });
+    </script>
+</asp:Content>
 
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <br /> <br />
     <div class="container-fluid">
         <div class="row">
             <br /> <br />
-            <div class="col-md-5 card-border product-polaroid">
+            <div class="col-md-5">
 
-                <div class="card">
+                <div class="card card-border product-polaroid">
                     <div class="card-body">
 
                         <%--IMAGE ROW--%>
@@ -131,39 +139,41 @@
                             <div class="col-md-4">
                                 <label>Current Password</label>
                                 <div class="form-group">
-                                    <asp:TextBox ID="PasswordTextBox" runat="server" class="form-control" placeholder="Password" TextMode="Password" ReadOnly="True"></asp:TextBox>
+                                    <asp:TextBox ID="PasswordTextBox" runat="server" class="form-control" placeholder="Password" ReadOnly="True"></asp:TextBox>
                                 </div>
                             </div>
 
                             <div class="col-md-4">
                                 <label>New Password</label>
                                 <div class="form-group">
-                                    <asp:TextBox ID="TextBox1" runat="server" class="form-control" placeholder="Password" TextMode="Password"></asp:TextBox>
+                                    <asp:TextBox ID="NewPasswordTextBox" runat="server" class="form-control" placeholder="Password" TextMode="Password"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
 
                         <%--COL 12 -BUTTON ROW--%>
                         <div class="row text-center">
-                            <div class="col-md-12 text-center mx-auto"> 
-                                <div class="form-group">
-                                    <center>
-                                        <asp:Button ID="UpdateButton" runat="server" Text="Update" class="btn btn-success btn-block btn-lg" />
-                                    </center>
-                                </div>
+                            <div class="col-md-8 mx-auto"> 
+                                <center>
+                                    <div class="form-group">
+                                    
+                                        <asp:Button ID="UpdateButton" runat="server" Text="Update" class="btn btn-success btn-block btn-lg" OnClick="UpdateButton_Click" />
+                                  
+                                    </div>
+                                </center>
                             </div>
                         </div>
 
-                    </div>
-                </div>
+                        <a href="Default.aspx"> <b> << Back to Home </b> </a> 
+                <br /> 
 
-                <a href="Default.aspx"> <b> << Back to Home </b> </a> 
-                <br /> <br />
+                    </div>
+                </div>              
             </div>
 
-            <div class="col-md-7 card-border product-polaroid">
+            <div class="col-md-7">
 
-                <div class="card">
+                <div class="card card-border product-polaroid">
                     <div class="card-body">
 
                         <%--COL 12 -BANNER ROW--%>

@@ -1,13 +1,13 @@
 ﻿<%@ Page Title="User Sign Up" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="UserSignUp.aspx.cs" Inherits="EcommerceGemShae.UserSignUp" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-
-    <div class="container">
+    <br /> <br />
+    <div class="container pt-3">
         <div class="row">
             <br /> <br />
-            <div class="col-md-9 mx-auto center card-border product-polaroid">
+            <div class="col-md-8 mx-auto">
 
-                <div class="card">
+                <div class="card product-polaroid card-border">
                     <div class="card-body">
 
                         <%--IMAGE ROW--%>
@@ -166,17 +166,13 @@
                             </div>
                         </div>
 
+                        <asp:Label ID="StatusLabel" runat="server" Text="" style="color:#E1B12C" Font-Bold="True" Font-Italic="True"></asp:Label> 
+                        <br />
+                        <a href="Default.aspx"> <b> << Back to Home </b> </a> 
                     </div>
                 </div>
 
-                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:UserSignUpConnectionString %>" SelectCommand="SELECT * FROM [user_master]"></asp:SqlDataSource>
-
-                <a href="Default.aspx"> <b> << Back to Home </b> 
-                
-                </a> 
-                <br /> <br />
-
-                <asp:Label ID="StatusLabel" runat="server" Text="" style="color:#E1B12C" Font-Bold="True" Font-Italic="True"></asp:Label>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:UserSignUpConnectionString %>" SelectCommand="SELECT * FROM [user_master]"></asp:SqlDataSource> 
             </div>
         </div>
     </div>

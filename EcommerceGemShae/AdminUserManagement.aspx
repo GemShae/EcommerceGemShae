@@ -8,13 +8,13 @@
 </asp:Content>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-
+    <br /> <br />
     <div class="container-fluid">
         <div class="row">
             <br /> <br />
-            <div class="col-md-5 card-border product-polaroid">
+            <div class="col-md-5 ">
 
-                <div class="card">
+                <div class="card card-border product-polaroid">
                     <div class="card-body">
 
                         <%--TITLE ROW--%>
@@ -43,7 +43,7 @@
 
                         <%--COL 4,6 - ID & NAME ROW--%>
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-5">
                                 <label>User ID</label>
                                 <div class="form-group">
                                     <div class="input-group">
@@ -53,7 +53,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-6">
+                            <div class="col-md-7">
                                 <label>Full Name</label>
                                 <div class="form-group">
                                     <asp:TextBox ID="FullNameTextBox" runat="server" CssClass="form-control" placeholder="Full Name" ReadOnly="True"></asp:TextBox>
@@ -63,18 +63,18 @@
 
                         <%--COL 6 - ACCOUNT STATUS & DOB ROW--%>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-7">
                                 <label>Account Status</label>
                                 <div class="form-group">
                                     <div class="input-group">
-                                        <asp:TextBox ID="AccStatusTextBox" runat="server" CssClass="form-control mr-1" placeholder="Account Status" ReadOnly="True"></asp:TextBox>
-                                        <asp:LinkButton ID="ActiveLinkButton" runat="server" Text="S" class="btn btn-success mr-1" OnClick="ActiveLinkButton_Click"><i class="fas fa-check-circle"></i></asp:LinkButton>
-                                        <asp:LinkButton ID="DeactivateLinkButton" runat="server" Text="D" class="btn btn-danger mr-1" OnClick="DeactivateLinkButton_Click"><i class="fas fa-times-circle"></i></asp:LinkButton>
+                                        <asp:TextBox ID="AccStatusTextBox" runat="server" CssClass="form-control" placeholder="Account Status" ReadOnly="True"></asp:TextBox>
+                                        <asp:LinkButton ID="ActiveLinkButton" runat="server" Text="S" class="btn btn-success" OnClick="ActiveLinkButton_Click"><i class="fas fa-check-circle"></i></asp:LinkButton>
+                                        <asp:LinkButton ID="DeactivateLinkButton" runat="server" Text="D" class="btn btn-danger" OnClick="DeactivateLinkButton_Click"><i class="fas fa-times-circle"></i></asp:LinkButton>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-md-6">
+                            <div class="col-md-5">
                                 <label>Date of Birth</label>
                                 <div class="form-group">
                                     <asp:TextBox ID="DOBTextBox" runat="server" CssClass="form-control" placeholder="dd-mm-yyyy" ReadOnly="True"></asp:TextBox>
@@ -135,26 +135,24 @@
                         </div>
 
                         <%--COL 12 -BUTTON ROW--%>
-                        <div class="row text-center">
-                            <div class="col-md-12 text-center mx-auto"> 
+                        <div class="row ">
+                            <div class="col-8 mx-auto"> 
                                     <center>
                                         <asp:Button ID="DeletePermButton" runat="server" Text="Delete User Permanently" class="btn btn-danger btn-block btn-lg" OnClick="DeletePermButton_Click" />
                                     </center>
                             </div>
                         </div>
+                        <a href="Default.aspx"> <b> << Back to Home </b> </a> 
 
                     </div>
                 </div>
 
-                <br />
-                <a href="Default.aspx"> <b> << Back to Home </b> </a> 
-                <br /> <br />
             </div>
 
-            <div class="col-md-7 card-border product-polaroid">
+            <div class="col-md-7 ">
 
                 <div class="card">
-                    <div class="card-body">
+                    <div class="card-body card-border product-polaroid">
 
                         <div class="row">
                             <br /> <br />
@@ -173,7 +171,7 @@
 
                         <div class="row">
                             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:UserTableConnectionString %>" SelectCommand="SELECT * FROM [user_master]"></asp:SqlDataSource>
-                            <div class="col">
+                            <div class="col-md-12">
                                 <asp:GridView ID="UserListGridView" runat="server" class="table table-bordered thead-dark table-hover table-responsive-md" AutoGenerateColumns="False" DataKeyNames="user_id" DataSourceID="SqlDataSource1" AllowSorting="True">
                                     <Columns>
                                         <asp:BoundField DataField="user_id" HeaderText="User ID" ReadOnly="True" SortExpression="user_id" />
