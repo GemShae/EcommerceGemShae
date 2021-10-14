@@ -112,6 +112,7 @@
                                 </li>
                                 <li >
                                     <asp:ImageButton ID="CartImageButton" runat="server" ImageUrl="~/images/shopping-cart.png" ForeColor="#E1B12C" OnClick="CartImageButton_Click" Width="35px" />
+                                    <asp:Label ID="NuminCartLabel" runat="server" Text="" Font-Bold="True" ForeColor="#E1B12C"></asp:Label>
                                 </li>
                         </ul>
                     </div> 

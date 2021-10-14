@@ -34,10 +34,10 @@ namespace EcommerceGemShae
             }
             else
             {
-                AddNewBook();
+                AddNewProduct();
             }
 
-            //AddNewBook();
+            //AddNewProduct();
         }
 
         protected void UpdateButton_Click(object sender, EventArgs e)
@@ -87,7 +87,7 @@ namespace EcommerceGemShae
             }
         }
 
-        void AddNewBook()
+        void AddNewProduct()
         {
             try
             {
@@ -111,7 +111,7 @@ namespace EcommerceGemShae
                         conn.Open();
                     }
 
-                    string insertQuery = "insert into product_master(product_id,product_name,category,product_cost,product_description,actual_stock,current_stock,product_img_link)" +
+                    string insertQuery = "insert into product_master(product_id,product_name,category,product_cost,product_description,actual_stock,current_stock,product_img_link) " +
                     "values (@productid,@productname,@category,@productcost,@productdescription,@actualstock,@currentstock,@productimglink)";
 
                     SqlCommand cmd = new SqlCommand(insertQuery, conn);

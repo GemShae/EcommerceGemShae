@@ -49,17 +49,28 @@
             </div>
 
             <div class="row home-subscribe">
-                <div class="col-12 text-right">
+                <div class="col-md-6 text-right">
+                    Sort By:&nbsp; 
+                    <asp:DropDownList ID="CategoryDropDownList" runat="server" OnSelectedIndexChanged="CategoryDropDownList_SelectedIndexChanged">
+                        <asp:ListItem>Select Category</asp:ListItem>
+                        <asp:ListItem>Photography</asp:ListItem>
+                        <asp:ListItem>Audio</asp:ListItem>
+                        <asp:ListItem>Entertainment</asp:ListItem>
+                        <asp:ListItem>Videography</asp:ListItem>
+                        <asp:ListItem>Motivational Speaking</asp:ListItem>
+                    </asp:DropDownList>
+                </div>
+                <div class="col-md-6 text-right">
                     <asp:TextBox ID="SearchTextBox" runat="server" Height="28px" Width="180px" Font-Bold="True" ForeColor="#E1B12C"></asp:TextBox>
                     <asp:ImageButton ID="SearchImageButton" runat="server" Height="25px" ImageUrl="~/images/magnifying-glass.png" Width="25px" OnClick="SearchImageButton_Click" />
                 </div>
             </div>
             <br />
             <div class="row">
-                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ProductTableConnectionString %>" SelectCommand="SELECT [product_id], [product_name], [category], [product_cost], [product_description], [product_img_link] FROM [product_master]"></asp:SqlDataSource>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ProductTableConnectionString %>" SelectCommand="SELECT [product_id], [product_name], [category], [product_cost], [product_description], [current_stock], [product_img_link] FROM [product_master]"></asp:SqlDataSource>
 
                 <div class="col">
-                    <asp:DataList ID="ProductDataList" runat="server" DataKeyField="product_id" DataSourceID="SqlDataSource1" Width="900px" RepeatColumns="3" RepeatDirection="Horizontal" CellPadding="5" CellSpacing="10" OnItemCommand="ProductDataList_ItemCommand">
+                    <asp:DataList ID="ProductDataList" runat="server" DataKeyField="product_id" DataSourceID="SqlDataSource1" Width="900px" RepeatColumns="3" RepeatDirection="Horizontal" CellPadding="5" CellSpacing="10" OnItemCommand="ProductDataList_ItemCommand" OnCancelCommand="ProductDataList_CancelCommand1">
                         
                         <ItemTemplate>
                             <div class="container-fluid">
@@ -75,8 +86,12 @@
                                              </div>
                                             <div class="row">
                                                  <div class="col-12">
-                                                     <asp:Image ID="ProductImage1" runat="server" class="img-fluid image-size p-2 p-sm-3 product-image" ImageUrl='<%# Eval("product_img_link") %>'/>          
+                                                     <asp:Image ID="ProductImage1" runat="server" class="img-fluid image-size p-2 p-sm-3 product-image" ImageUrl='<%# Eval("product_img_link") %>'/> 
                                                  </div>
+                                                <div class="col-md-4 current-stock">
+                                                     Stock:
+                                                     <asp:Label ID="StockLabel" runat="server" Text='<%# Eval("current_stock") %>'></asp:Label>
+                                                </div>
                                              </div>
                                             <div class="row">
                                                  <div class="col-12 text-center">

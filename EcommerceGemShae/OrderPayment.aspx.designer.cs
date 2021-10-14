@@ -24,13 +24,13 @@ namespace EcommerceGemShae
         protected global::System.Web.UI.WebControls.TextBox NameTextBox;
 
         /// <summary>
-        /// FullNameRequiredFieldValidator control.
+        /// NameRequiredFieldValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator FullNameRequiredFieldValidator;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator NameRequiredFieldValidator;
 
         /// <summary>
         /// NameRegularExpressionValidator control.
@@ -42,6 +42,15 @@ namespace EcommerceGemShae
         protected global::System.Web.UI.WebControls.RegularExpressionValidator NameRegularExpressionValidator;
 
         /// <summary>
+        /// PaymentImage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image PaymentImage;
+
+        /// <summary>
         /// CardNumberTextBox control.
         /// </summary>
         /// <remarks>
@@ -51,13 +60,13 @@ namespace EcommerceGemShae
         protected global::System.Web.UI.WebControls.TextBox CardNumberTextBox;
 
         /// <summary>
-        /// RequiredFieldValidator1 control.
+        /// CNRequiredFieldValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator CNRequiredFieldValidator;
 
         /// <summary>
         /// RegularExpressionValidator1 control.
@@ -78,6 +87,15 @@ namespace EcommerceGemShae
         protected global::System.Web.UI.WebControls.TextBox ExpirationDateTextBox;
 
         /// <summary>
+        /// ExpireRequiredFieldValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ExpireRequiredFieldValidator;
+
+        /// <summary>
         /// CVVTextBox control.
         /// </summary>
         /// <remarks>
@@ -87,13 +105,22 @@ namespace EcommerceGemShae
         protected global::System.Web.UI.WebControls.TextBox CVVTextBox;
 
         /// <summary>
-        /// CvvRequiredFieldValidator control.
+        /// CVVRequiredFieldValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator CvvRequiredFieldValidator;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator CVVRequiredFieldValidator;
+
+        /// <summary>
+        /// CVVRegularExpressionValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator CVVRegularExpressionValidator;
 
         /// <summary>
         /// BillingAddressTextBox control.
@@ -139,5 +166,14 @@ namespace EcommerceGemShae
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label StatusLabel;
+
+        /// <summary>
+        /// SqlDataSource1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
     }
 }

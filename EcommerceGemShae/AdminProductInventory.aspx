@@ -58,6 +58,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <asp:FileUpload ID="ImageFileUpload" runat="server" class="form-control" onchange="readURL(this);"/>
+                                <%-- <asp:RequiredFieldValidator ID="ImageRequiredFieldValidator" runat="server" ErrorMessage="Image is Required" ControlToValidate="ImageFileUpload" Display="Dynamic" ForeColor="Red">*</asp:RequiredFieldValidator> --%>
                             </div>
                         </div>
 
@@ -79,6 +80,7 @@
                                 <label>Product Name</label>
                                 <div class="form-group">
                                     <asp:TextBox ID="ProductNameTextBox" runat="server" CssClass="form-control" placeholder="Product Name"></asp:TextBox>
+                                    <%-- <asp:RequiredFieldValidator ID="PNameRequiredFieldValidator" runat="server" ErrorMessage="Product Name is Required" ControlToValidate="ProductNameTextBox" Display="Dynamic" ForeColor="Red">*</asp:RequiredFieldValidator> --%>
                                 </div>
                             </div>
                         </div>
@@ -95,6 +97,7 @@
                                         <asp:ListItem>Videography</asp:ListItem>
                                         <asp:ListItem>Motivational Speaking</asp:ListItem>
                                     </asp:ListBox>
+                                    <%-- <asp:RequiredFieldValidator ID="CategoryRequiredFieldValidator" runat="server" ErrorMessage="At least 1 Category is Required" ControlToValidate="CategoryListBox" Display="Dynamic" Text="*" ForeColor="Red"></asp:RequiredFieldValidator> --%>
                                 </div>
                             </div>
                         </div>
@@ -105,6 +108,8 @@
                                 <label>Product Cost (Per Unit)</label>
                                 <div class="form-group">
                                     <asp:TextBox ID="ProductCostTextBox" runat="server" CssClass="form-control" placeholder="Product Cost (Per Unit)" TextMode="Number"></asp:TextBox>
+                                    <%-- <asp:RequiredFieldValidator ID="PPriceRequiredFieldValidator" runat="server" ErrorMessage="Cost is Required" ControlToValidate="ProductCostTextBox" Display="Dynamic" ForeColor="Red">*</asp:RequiredFieldValidator> --%>
+                                    <%-- <asp:RegularExpressionValidator ID="PPriceRegularExpressionValidator" runat="server" ErrorMessage="Cost is Invalid" ControlToValidate="ProductCostTextBox" Display="Dynamic" ForeColor="Red" ValidationExpression="[0-9]*">*</asp:RegularExpressionValidator> --%>
                                 </div>
                             </div>
                         </div>
@@ -115,6 +120,8 @@
                                 <label>Actual Stock</label>
                                 <div class="form-group">
                                     <asp:TextBox ID="ActualStockTextBox" runat="server" class="form-control" placeholder="Actual Stock" TextMode="Number"></asp:TextBox>
+                                    <%-- <asp:RequiredFieldValidator ID="AStockRequiredFieldValidator" runat="server" ErrorMessage="Stock is Required" ControlToValidate="ActualStockTextBox" Display="Dynamic" ForeColor="Red">*</asp:RequiredFieldValidator> --%>
+                                    <%-- <asp:RegularExpressionValidator ID="AStockRegularExpressionValidator" runat="server" ErrorMessage="Invalid Actual Stock" ControlToValidate="ActualStockTextBox" Display="Dynamic" ForeColor="Red" ValidationExpression="[0-9]*">*</asp:RegularExpressionValidator> --%>
                                 </div>
                             </div>
 
@@ -138,6 +145,7 @@
                                 <label>Product Description</label>
                                 <div class="form-group">
                                     <asp:TextBox ID="ProductDesTextBox" runat="server" CssClass="form-control" placeholder="Product Description" TextMode="MultiLine" Rows="2"></asp:TextBox>
+                                    <%-- <asp:RequiredFieldValidator ID="PDesRequiredFieldValidator" runat="server" ErrorMessage="Prod. Description is Required" ControlToValidate="ProductDesTextBox" Display="Dynamic" ForeColor="Red">*</asp:RequiredFieldValidator> --%>
                                 </div>
                             </div>
                         </div>
@@ -160,6 +168,7 @@
                         <a href="Default.aspx"> <b> << Back to Home </b> </a> 
                         <br /> <br />
 
+                        <asp:ValidationSummary ID="ValidationSummary1" runat="server" DisplayMode="List" Font-Bold="True" Font-Italic="True" ForeColor="Red" HeaderText="Fix the following errors:" />
                     </div>
                 </div>
 

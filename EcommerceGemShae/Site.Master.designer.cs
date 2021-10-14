@@ -69,6 +69,15 @@ namespace EcommerceGemShae
         protected global::System.Web.UI.WebControls.ImageButton CartImageButton;
 
         /// <summary>
+        /// NuminCartLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label NuminCartLabel;
+
+        /// <summary>
         /// MainContent control.
         /// </summary>
         /// <remarks>

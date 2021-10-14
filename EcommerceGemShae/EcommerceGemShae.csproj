@@ -51,6 +51,10 @@
     <Reference Include="AspNet.ScriptManager.jQuery, Version=3.6.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\AspNet.ScriptManager.jQuery.3.6.0\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
     </Reference>
+    <Reference Include="itextsharp, Version=5.5.10.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=3.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
@@ -1842,6 +1846,7 @@
     <Content Include="images\magnifying-glass.png" />
     <Content Include="images\Numark Party Mix II - DJ Controller with Party Lights.jpg" />
     <Content Include="images\Official PAV Logo.png" />
+    <Content Include="images\PayMethod.gif" />
     <Content Include="images\Pinknd Blue.jpg" />
     <Content Include="images\Jaida.JPG" />
     <Content Include="images\Shanya.JPG" />
@@ -1850,7 +1855,9 @@
     <Content Include="images\shopping-cart.png" />
     <Content Include="images\UBeesize Camera Tripod.jpg" />
     <Content Include="images\user.png" />
+    <Content Include="itextsharp.dll" />
     <Content Include="OrderPayment.aspx" />
+    <Content Include="PdfGenerate.aspx" />
     <Content Include="ProductsOld.aspx" />
     <Content Include="Products.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -2046,6 +2053,13 @@
     </Compile>
     <Compile Include="OrderPayment.aspx.designer.cs">
       <DependentUpon>OrderPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PdfGenerate.aspx.cs">
+      <DependentUpon>PdfGenerate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PdfGenerate.aspx.designer.cs">
+      <DependentUpon>PdfGenerate.aspx</DependentUpon>
     </Compile>
     <Compile Include="ProductsOld.aspx.cs">
       <DependentUpon>ProductsOld.aspx</DependentUpon>

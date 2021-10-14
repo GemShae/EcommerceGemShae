@@ -11,52 +11,70 @@ namespace EcommerceGemShae
 {
 
 
-    public partial class ProductsTwo
+    public partial class PdfGenerate
     {
 
         /// <summary>
-        /// CategoryDropDownList control.
+        /// Panel1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList CategoryDropDownList;
+        protected global::System.Web.UI.WebControls.Panel Panel1;
 
         /// <summary>
-        /// SearchTextBox control.
+        /// OrderNumLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox SearchTextBox;
+        protected global::System.Web.UI.WebControls.Label OrderNumLabel;
 
         /// <summary>
-        /// SearchImageButton control.
+        /// OrderDTLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton SearchImageButton;
+        protected global::System.Web.UI.WebControls.Label OrderDTLabel;
 
         /// <summary>
-        /// SqlDataSource1 control.
+        /// BuyerAddLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+        protected global::System.Web.UI.WebControls.Label BuyerAddLabel;
 
         /// <summary>
-        /// ProductDataList control.
+        /// GridView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DataList ProductDataList;
+        protected global::System.Web.UI.WebControls.GridView GridView1;
+
+        /// <summary>
+        /// GrandTLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label GrandTLabel;
+
+        /// <summary>
+        /// DownloadButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button DownloadButton;
     }
 }

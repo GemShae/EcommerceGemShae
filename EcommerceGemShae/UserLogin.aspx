@@ -49,9 +49,7 @@
 
                                 <div class="form-group">
                                     <asp:Button ID="LoginButton" runat="server" Text="Login" class="btn btn-success btn-block btn-lg" OnClick="LoginButton_Click" />
-                                </div>
-
-                                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:UserLoginConnectionString %>" SelectCommand="SELECT * FROM [user_master]"></asp:SqlDataSource>
+                                </div>                                
 
                                 <div class="form-group">
                                     <a href="UserSignUp.aspx">
@@ -60,6 +58,9 @@
                                 </div>
                             </div>
                         </div>
+
+                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:UserLoginConnectionString %>" SelectCommand="SELECT * FROM [user_master]"></asp:SqlDataSource>
+                        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:CartDetailsConnectionString %>" SelectCommand="SELECT * FROM [cartdetails_master]"></asp:SqlDataSource>
 
                         <asp:Label ID="StatusLabel" runat="server" Text="" style="color:#E1B12C" Font-Bold="True" Font-Italic="True"></asp:Label> <br />
 

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -60,6 +61,19 @@ namespace EcommerceGemShae
             catch(Exception ex)
             {
                 Response.Write("<script>alert('" + ex.Message + "');</script>");
+            }
+
+            //Count number of products in Shopping Cart
+            DataTable dataTable = new DataTable();
+            dataTable = (DataTable)Session["buyitems"];
+
+            if (dataTable != null)
+            {
+                NuminCartLabel.Text = "(" + dataTable.Rows.Count.ToString() + ")";
+            }
+            else
+            {
+                NuminCartLabel.Text = "(0)";
             }
         }
 
