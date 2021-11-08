@@ -14,7 +14,11 @@ namespace EcommerceGemShae
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!Request.IsSecureConnection)
+            {
+                string url = ConfigurationManager.AppSettings["SecurePath"] + "AdminLogin.aspx";
+                Response.Redirect(url);
+            }
         }
 
         protected void LoginButton_Click(object sender, EventArgs e)

@@ -14,6 +14,12 @@ namespace EcommerceGemShae
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!Request.IsSecureConnection)
+            {
+                string url = ConfigurationManager.AppSettings["SecurePath"] + "UserProfile.aspx";
+                Response.Redirect(url);
+            }
+
             try
             {
                 if (Session["username"].ToString() == "" || Session["username"] == null)
@@ -58,14 +64,14 @@ namespace EcommerceGemShae
         {
             try
             {
-                SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["UserTableConnectionString"].ConnectionString);
+                SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["OrderTableConnectionString"].ConnectionString);
 
                 if (conn.State == ConnectionState.Closed)
                 {
                     conn.Open();
                 }
 
-                string checkuser = "select * from orderdetails_master where user_id='" + Session["username"].ToString() + "'";
+                string checkuser = "select * from orderdetails_master where username='" + Session["username"].ToString() + "'";
                 SqlCommand cmd = new SqlCommand(checkuser, conn);
 
                 SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);

@@ -14,11 +14,18 @@ namespace EcommerceGemShae
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!Request.IsSecureConnection)
+            {
+                string url = ConfigurationManager.AppSettings["SecurePath"] + "ShoppingCart.aspx";
+                Response.Redirect(url);
+            }
+
             if (!IsPostBack)
             {
                 if (Session["buyitems"] == null)
                 {
                     BuyItemsButton.Enabled = false;
+                    //Response.Redirect("UserLogin.aspx");
                 }
                 else
                 {
@@ -34,9 +41,11 @@ namespace EcommerceGemShae
                 dataTable.Columns.Add("Num");
                 dataTable.Columns.Add("PID");
                 dataTable.Columns.Add("PName");
-                dataTable.Columns.Add("PImage");               
+                dataTable.Columns.Add("PImage");
+                dataTable.Columns.Add("PDesc");
                 dataTable.Columns.Add("PPrice");
                 dataTable.Columns.Add("PQuantity");
+                dataTable.Columns.Add("PCategory");
                 dataTable.Columns.Add("PSTotal");
 
                 if (Request.QueryString["id"] != null)
@@ -63,8 +72,10 @@ namespace EcommerceGemShae
                             dataRow["PID"] = dataSet.Tables[0].Rows[0]["product_id"].ToString();
                             dataRow["PName"] = dataSet.Tables[0].Rows[0]["product_name"].ToString();
                             dataRow["PImage"] = dataSet.Tables[0].Rows[0]["product_img_link"].ToString();
+                            dataRow["PDesc"] = dataSet.Tables[0].Rows[0]["product_description"].ToString();
                             dataRow["PPrice"] = dataSet.Tables[0].Rows[0]["product_cost"].ToString();
                             dataRow["PQuantity"] = Request.QueryString["quantity"];
+                            dataRow["PCategory"] = dataSet.Tables[0].Rows[0]["category"].ToString();
 
                             //Response.Write("<script>alert('"+dataRow["PName"].ToString()+"');</script>");
 
@@ -80,13 +91,38 @@ namespace EcommerceGemShae
 
                             //Response.Write("<script>alert('Add data Row');</script>");
 
+                            SqlConnection conn2 = new SqlConnection(ConfigurationManager.ConnectionStrings["CartDetailsConnectionString"].ConnectionString);
+
+                            if (conn2.State == ConnectionState.Closed)
+                            {
+                                conn2.Open();
+                            }
+
+                            string insertQuery = "insert into cartdetails_master(item_num,product_id,product_name,product_description,product_img_link,product_cost,quantity,category,username) " +
+                                "values (@itemnum,@productid,@productname,@productdescription,@productimg,@productcost,@quantity,@category,@username)";
+
+                            SqlCommand cmd = new SqlCommand(insertQuery, conn2);
+
+                            cmd.Parameters.AddWithValue("@itemnum", dataRow["Num"]);
+                            cmd.Parameters.AddWithValue("@productid", dataRow["PID"]);
+                            cmd.Parameters.AddWithValue("@productname", dataRow["PName"]);
+                            cmd.Parameters.AddWithValue("@productdescription", dataRow["PDesc"]);
+                            cmd.Parameters.AddWithValue("@productimg", dataRow["PImage"]);
+                            cmd.Parameters.AddWithValue("@productcost", dataRow["PPrice"]);
+                            cmd.Parameters.AddWithValue("@quantity", dataRow["PQuantity"]);
+                            cmd.Parameters.AddWithValue("@category", dataRow["PCategory"]);
+                            cmd.Parameters.AddWithValue("@username", Session["username"].ToString());
+
+                            cmd.ExecuteNonQuery();
+                            conn2.Close();
+
                             CartGridView.DataSource = dataTable;
                             CartGridView.DataBind();
                             Session["buyitems"] = dataTable;
                             BuyItemsButton.Enabled = true;
 
-                            CartGridView.FooterRow.Cells[5].Text = "Total Cost";
-                            CartGridView.FooterRow.Cells[6].Text = GrandTotal().ToString();
+                            CartGridView.FooterRow.Cells[6].Text = "Total Cost";
+                            CartGridView.FooterRow.Cells[7].Text = GrandTotal().ToString();
                             Response.Redirect("ShoppingCart.aspx");
                         }
                         catch (Exception ex)
@@ -120,8 +156,10 @@ namespace EcommerceGemShae
                             dataRow["PID"] = dataSet.Tables[0].Rows[0]["product_id"].ToString();
                             dataRow["PName"] = dataSet.Tables[0].Rows[0]["product_name"].ToString();
                             dataRow["PImage"] = dataSet.Tables[0].Rows[0]["product_img_link"].ToString();
+                            dataRow["PDesc"] = dataSet.Tables[0].Rows[0]["product_description"].ToString();
                             dataRow["PPrice"] = dataSet.Tables[0].Rows[0]["product_cost"].ToString();
                             dataRow["PQuantity"] = Request.QueryString["quantity"];
+                            dataRow["PCategory"] = dataSet.Tables[0].Rows[0]["category"].ToString();
 
                             int price = Convert.ToInt32(dataRow["PPrice"].ToString());
                             int quantity = Convert.ToInt16(Request.QueryString["quantity"].ToString());
@@ -129,14 +167,41 @@ namespace EcommerceGemShae
                             dataRow["PSTotal"] = subtotalPrice;
 
                             dataTable.Rows.Add(dataRow);
+
+                            SqlConnection conn2 = new SqlConnection(ConfigurationManager.ConnectionStrings["CartDetailsConnectionString"].ConnectionString);
+
+                            if (conn2.State == ConnectionState.Closed)
+                            {
+                                conn2.Open();
+                            }
+
+                            string insertQuery = "insert into cartdetails_master(item_num,product_id,product_name,product_description,product_img_link,product_cost,quantity,category,username) " +
+                                "values (@itemnum,@productid,@productname,@productdescription,@productimg,@productcost,@quantity,@category,@username)";
+
+                            SqlCommand cmd = new SqlCommand(insertQuery, conn2);
+
+                            cmd.Parameters.AddWithValue("@itemnum", dataRow["Num"]);
+                            cmd.Parameters.AddWithValue("@productid", dataRow["PID"]);
+                            cmd.Parameters.AddWithValue("@productname", dataRow["PName"]);
+                            cmd.Parameters.AddWithValue("@productdescription", dataRow["PDesc"]);
+                            cmd.Parameters.AddWithValue("@productimg", dataRow["PImage"]);
+                            cmd.Parameters.AddWithValue("@productcost", dataRow["PPrice"]);
+                            cmd.Parameters.AddWithValue("@quantity", dataRow["PQuantity"]);
+                            cmd.Parameters.AddWithValue("@category", dataRow["PCategory"]);
+                            cmd.Parameters.AddWithValue("@username", Session["username"].ToString());
+
+                            cmd.ExecuteNonQuery();
+                            conn2.Close();
+
+
                             CartGridView.DataSource = dataTable;
                             CartGridView.DataBind();
                             Session["buyitems"] = dataTable;
                             BuyItemsButton.Enabled = true;
 
 
-                            CartGridView.FooterRow.Cells[5].Text = "Total Cost";
-                            CartGridView.FooterRow.Cells[6].Text = GrandTotal().ToString();
+                            CartGridView.FooterRow.Cells[6].Text = "Total Cost";
+                            CartGridView.FooterRow.Cells[7].Text = GrandTotal().ToString();
                             Response.Redirect("ShoppingCart.aspx");
                         }
                         catch (Exception ex)
@@ -153,14 +218,25 @@ namespace EcommerceGemShae
 
                     if (CartGridView.Rows.Count > 0)
                     {
-                        CartGridView.FooterRow.Cells[5].Text = "Total Cost";
-                        CartGridView.FooterRow.Cells[6].Text = GrandTotal().ToString();
+                        CartGridView.FooterRow.Cells[6].Text = "Total Cost";
+                        CartGridView.FooterRow.Cells[7].Text = GrandTotal().ToString();
                     }
                 }
             }
 
-            string orderDate = DateTime.Now.ToShortDateString();
-            Session["orderdate"] = orderDate;
+            if (CartGridView.Rows.Count.ToString() == "0")
+            {
+                ClearCartLinkButton.Enabled = false;
+                BuyItemsButton.Enabled = false;
+            }
+            else
+            {
+                ClearCartLinkButton.Enabled = true;
+                BuyItemsButton.Enabled = true;
+            }
+
+            //string orderDate = DateTime.Now.ToShortDateString();
+            //Session["orderdate"] = orderDate;
             OrderId();
 
         }
@@ -186,7 +262,7 @@ namespace EcommerceGemShae
             return totalCost;
         }
 
-        //Generating Unique Oder Id
+        //Generating Unique Order Id
         public void OrderId()
         {
             String alpha = "abCdefghIjklmNopqrStuvwXyz0123456789";
@@ -195,7 +271,7 @@ namespace EcommerceGemShae
 
             for (int i=0; i<5; i++)
             {
-                charArray[i] = alpha[(int)(15 * random.NextDouble())];
+                charArray[i] = alpha[(int)(10 * random.NextDouble())];
             }
 
             string orderId;
@@ -223,10 +299,36 @@ namespace EcommerceGemShae
                 dataTableData = numofItems.ToString();
                 numofItems2 = Convert.ToInt32(qdata);
 
+                TableCell productId = CartGridView.Rows[e.RowIndex].Cells[1];
+
                 if (numofItems == numofItems2)
                 {
                     dataTable.Rows[i].Delete();
                     dataTable.AcceptChanges();
+
+                    try
+                    {                       
+                        SqlConnection conn2 = new SqlConnection(ConfigurationManager.ConnectionStrings["CartDetailsConnectionString"].ConnectionString);
+
+                        if (conn2.State == ConnectionState.Closed)
+                        {
+                            conn2.Open();
+                        }
+
+                        string deleteQuery = "delete top (1) from cartdetails_master where product_id='" + productId.Text + "' and username='" +
+                            Session["username"] + "'";
+
+                        SqlCommand cmd = new SqlCommand(deleteQuery, conn2);
+
+                        cmd.ExecuteNonQuery();
+                        conn2.Close();
+                    }
+                    catch (Exception ex)
+                    {
+                        Response.Write("<script>alert('" + ex.Message + "');</script>");
+                    }
+
+
                     //Item has been deleted from cart
                     break;
                 }
@@ -245,39 +347,36 @@ namespace EcommerceGemShae
 
         protected void BuyItemsButton_Click(object sender, EventArgs e)
         {
-            DataTable dataTable;
-            dataTable = (DataTable)Session["buyitems"];
+            bool isTrue = true;
+            DataTable dataTable = (DataTable)Session["buyitems"];
 
-            for (int i=0; i<=dataTable.Rows.Count-1; i++)
+            for (int i = 0; i <= dataTable.Rows.Count - 1; i++)
             {
+                int productId = Convert.ToInt16(dataTable.Rows[i]["PID"]);
+                int productQuantity = Convert.ToInt16(dataTable.Rows[i]["PQuantity"]);
+
                 try
                 {
-                    SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["OrderTableConnectionString"].ConnectionString);
+                    SqlConnection sconn = new SqlConnection(ConfigurationManager.ConnectionStrings["ProductTableConnectionString"].ConnectionString);
 
-                    if (conn.State == ConnectionState.Closed)
+                    if (sconn.State == ConnectionState.Closed)
                     {
-                        conn.Open();
+                        sconn.Open();
                     }
 
-                    string insertOrder = "insert into orderdetails_master(order_id,item_num,username,product_id,quantity,subtotal,date_time) " +
-                        "values (@orderid,@itemnum,@username,@productid,@quantity,@subtotal,@datetime)";
+                    SqlDataAdapter da = new SqlDataAdapter("select current_stock,product_name from product_master where product_id =" + productId + "' " , sconn);
 
-                    SqlCommand cmd = new SqlCommand(insertOrder, conn);
+                    DataTable dataTable1 = new DataTable();
+                    da.Fill(dataTable1);
+                    int quanitiy = Convert.ToInt16(dataTable1.Rows[0][0]);
 
-                    cmd.Parameters.AddWithValue("@orderid", Session["orderid"]);
-                    cmd.Parameters.AddWithValue("@itemnum", dataTable.Rows[i]["Num"]);
-                    cmd.Parameters.AddWithValue("@username", Session["username"]);
-                    cmd.Parameters.AddWithValue("@productid", dataTable.Rows[i]["PID"]);
-                    cmd.Parameters.AddWithValue("@quantity", dataTable.Rows[i]["PQuantity"]);
-                    cmd.Parameters.AddWithValue("@subtotal", dataTable.Rows[i]["PSTotal"]);
-                    cmd.Parameters.AddWithValue("@datetime", DateTime.Now.ToString());
-
-                    cmd.ExecuteNonQuery();
-
-                    conn.Close();
-
-                    Response.Write("<script>alert('Order Placed Successfully');</script>");
-
+                    if (quanitiy == 0)
+                    {
+                        string productName = dataTable1.Rows[0][1].ToString();
+                        string message = "" + productName + " is not in stock";
+                        Response.Write("<script>alert('" + message + "');</script>");
+                        isTrue = false;
+                    }                   
                 }
                 catch (Exception ex)
                 {
@@ -285,16 +384,50 @@ namespace EcommerceGemShae
                 }
             }
 
-                if (CartGridView.Rows.Count.ToString() == "0")
+            if (CartGridView.Rows.Count.ToString() == "0")
+            {
+                Response.Write("<script>alert('Cart is Empty. Cannot place order');</script>");
+            }
+            else
+            {
+                if (isTrue == true)
                 {
-                    Response.Write("<script>alert('Cart is Empty. Cannot place order');</script>");
+                    Response.Redirect("OrderPayment.aspx"); 
                 }
-                else
-                {
-                    Response.Redirect("OrderPayment.aspx");
-                }
-            
+            }
+        }
 
+        protected void ClearCartLinkButton_Click(object sender, EventArgs e)
+        {
+            Session["buyitems"] = null;
+            ClearCart();
+            Response.Redirect("ShoppingCart.aspx");
+        }
+
+        //Function to Clear Cart
+        
+        public void ClearCart()
+        {
+            try
+            {
+                SqlConnection conn2 = new SqlConnection(ConfigurationManager.ConnectionStrings["CartDetailsConnectionString"].ConnectionString);
+
+                if (conn2.State == ConnectionState.Closed)
+                {
+                    conn2.Open();
+                }
+
+                string deleteQuery = "delete from cartdetails_master where username='" + Session["username"] + "' ";
+
+                SqlCommand cmd = new SqlCommand(deleteQuery, conn2);
+
+                cmd.ExecuteNonQuery();
+                conn2.Close();
+            }
+            catch (Exception ex)
+            {
+                Response.Write("<script>alert('" + ex.Message + "');</script>");
+            }
         }
     }
 }

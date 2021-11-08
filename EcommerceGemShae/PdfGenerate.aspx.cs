@@ -18,6 +18,23 @@ namespace EcommerceGemShae
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!Request.IsSecureConnection)
+            {
+                string url = ConfigurationManager.AppSettings["SecurePath"] + "PdfGenerate.aspx";
+                Response.Redirect(url);
+            }
+
+            if (!IsPostBack)
+            {
+                
+            }
+
+            if (Session["orderid"] == null)
+            {
+                Response.Redirect("ShoppingCart.aspx");
+            }
+
+
             string orderId = Session["orderid"].ToString();
             OrderNumLabel.Text = orderId;
 
@@ -118,15 +135,9 @@ namespace EcommerceGemShae
                     conn.Open();
                 }
 
-                string selectOrder = "select * from orderdetails_master where order_id='" + OrderNumLabel.Text.Trim() + "'";
+                string selectOrder = "select * from orderdetails_master where order_id='" + orderId + "' ";               
 
-                SqlCommand cmd = new SqlCommand(selectOrder, conn)
-                {
-                    Connection = conn
-                };
-
-                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter();
-                sqlDataAdapter.SelectCommand = cmd;
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(selectOrder,conn);
 
                 DataSet dataSet = new DataSet();
                 sqlDataAdapter.Fill(dataSet);

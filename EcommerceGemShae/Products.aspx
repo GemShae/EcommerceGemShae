@@ -51,11 +51,11 @@
             <div class="row home-subscribe">
                 <div class="col-md-6 text-right">
                     Sort By:&nbsp; 
-                    <asp:DropDownList ID="CategoryDropDownList" runat="server" OnSelectedIndexChanged="CategoryDropDownList_SelectedIndexChanged">
+                    <asp:DropDownList ID="CategoryDropDownList" runat="server" OnSelectedIndexChanged="CategoryDropDownList_SelectedIndexChanged" AutoPostBack="True" Font-Bold="True" Font-Size="Medium" ForeColor="#E1B12C">
                         <asp:ListItem>Select Category</asp:ListItem>
                         <asp:ListItem>Photography</asp:ListItem>
                         <asp:ListItem>Audio</asp:ListItem>
-                        <asp:ListItem>Entertainment</asp:ListItem>
+                        <asp:ListItem>Entertainment Unit</asp:ListItem>
                         <asp:ListItem>Videography</asp:ListItem>
                         <asp:ListItem>Motivational Speaking</asp:ListItem>
                     </asp:DropDownList>

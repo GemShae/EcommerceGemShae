@@ -14,6 +14,12 @@ namespace EcommerceGemShae
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!Request.IsSecureConnection)
+            {
+                string url = ConfigurationManager.AppSettings["SecurePath"] + "UserLogin.aspx";
+                Response.Redirect(url);
+            }
+
             if (!IsPostBack)
             {
                 if (Session["username"] != null)
@@ -53,7 +59,6 @@ namespace EcommerceGemShae
                         Session["role"] = "user";
                     }
 
-                    Session["buyitems"] = null;
                     FillSavedCart();
                     Response.Redirect("Default.aspx");
                 }

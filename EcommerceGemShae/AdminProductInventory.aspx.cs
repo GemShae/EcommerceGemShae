@@ -18,6 +18,24 @@ namespace EcommerceGemShae
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!Request.IsSecureConnection)
+            {
+                string url = ConfigurationManager.AppSettings["SecurePath"] + "AdminProductInventory.aspx";
+                Response.Redirect(url);
+            }
+
+            /* if (!IsPostBack)
+             {
+                 if (Session["role"].Equals("admin"))
+                 {
+
+                 }
+                 else
+                 {
+                     Response.Redirect("AdminLogin.aspx");
+                 }
+             } */
+
             ProductListGridView.DataBind();
         }
 
@@ -28,12 +46,15 @@ namespace EcommerceGemShae
 
         protected void AddButton_Click(object sender, EventArgs e)
         {
+            //Response.Write("<script>alert('Add product button');</script>");
+
             if (checkIfProductExists())
             {
                 Response.Write("<script>alert('Product already exists.');</script>");
             }
             else
             {
+                //Response.Write("<script>alert('Add new product');</script>");
                 AddNewProduct();
             }
 

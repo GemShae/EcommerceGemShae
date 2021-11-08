@@ -14,7 +14,18 @@ namespace EcommerceGemShae
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!Request.IsSecureConnection)
+            {
+                string url = ConfigurationManager.AppSettings["SecurePath"] + "Products.aspx";
+                Response.Redirect(url);
+            }
+
             Session["addproduct"] = "false";
+
+            if (!IsPostBack)
+            {
+
+            }
         }
 
         protected void SearchImageButton_Click(object sender, ImageClickEventArgs e)
@@ -101,7 +112,7 @@ namespace EcommerceGemShae
 
         protected void CategoryDropDownList_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string category = CategoryDropDownList.SelectedValue.ToString();
+            string category = CategoryDropDownList.SelectedItem.Text;
 
             if (category == "Select Category")
             {

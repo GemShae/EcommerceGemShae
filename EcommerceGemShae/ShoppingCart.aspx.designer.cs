@@ -24,6 +24,15 @@ namespace EcommerceGemShae
         protected global::System.Web.UI.WebControls.HyperLink ContinueShopHyperLink;
 
         /// <summary>
+        /// ClearCartLinkButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton ClearCartLinkButton;
+
+        /// <summary>
         /// CartGridView control.
         /// </summary>
         /// <remarks>

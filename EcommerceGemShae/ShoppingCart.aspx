@@ -2,11 +2,12 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-
+    <br /><br />
     <%--START SHOPPING PAGE FIRST SECTION - BREADCRUMPS--%>
     <section class="breadcrumbs-section">
         <div class="container pl-3 pr-3 p-sm-3">
             <div class="row">
+                <br /> <br />
                 <div class="col-md-9 pl-2">
                     <h2> <%: Title %> </h2>
                     <ol class="breadcrumb">
@@ -34,6 +35,8 @@
             <div class="row home-subscribe">
                 <div class="col-12 text-center">
                     <asp:HyperLink ID="ContinueShopHyperLink" runat="server" Font-Bold="True" Font-Size="X-Large" NavigateUrl="~/Products.aspx" ForeColor="White">Continue Shopping</asp:HyperLink>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:LinkButton ID="ClearCartLinkButton" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="White" OnClick="ClearCartLinkButton_Click">Clear Cart</asp:LinkButton>
                 </div>
             </div>
             <br />
